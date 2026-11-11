@@ -1,0 +1,19 @@
+/* Rail position and pointer tilt have separate transform owners. */
+.atlas[data-motion=true] .atlas-image[data-card-depth],
+.atlas .atlas-lead-image[data-card-depth]{overflow:visible;border-radius:10px;background:transparent!important;filter:none!important}
+.atlas-card-face{position:relative;display:block;width:100%;height:100%;overflow:hidden;border-radius:10px;transform-origin:50% 50%;backface-visibility:hidden;isolation:isolate;background:#e8e3eb}
+.atlas-card-face>img,.atlas-card-face>canvas{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;border-radius:inherit}
+.atlas-card-face>canvas{opacity:0}
+.atlas-card-face[data-gl-ready=true]>canvas{opacity:1}
+.atlas-card-face[data-gl-ready=true]>img{visibility:hidden}
+.atlas[data-motion=true] .atlas-image .atlas-card-face>img{filter:grayscale(var(--card-gray,1));transition:filter .65s ease}
+.atlas .atlas-lead-image .atlas-card-face>img{filter:grayscale(1)}
+.atlas-card-face::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;box-shadow:inset 0 0 0 1px rgb(255 255 255 / .14);background:radial-gradient(ellipse at var(--card-light-x,50%) var(--card-light-y,50%),rgb(255 255 255 / .18),transparent 70%);opacity:var(--card-light,0)}
+.atlas .atlas-lead-image[data-card-depth]{pointer-events:auto}
+.atlas-image:focus-visible .atlas-card-face{outline:2px solid #79688c;outline-offset:5px}
+.atlas[data-motion=true] .atlas-image:focus-visible{outline:none}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){
+ .atlas-card-face{transform:none!important;box-shadow:none!important}
+ .atlas-card-face::after{display:none}
+}
+@media(prefers-reduced-motion:reduce){.atlas[data-motion=true] .atlas-image .atlas-card-face>img{transition:none}}

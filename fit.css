@@ -1,0 +1,56 @@
+/* Meiova form surface. Field values, conditions and provider remain source-owned. */
+:root{--f-accent:#27212c;--f-accent-dark:#1a141f;--f-accent-ink:#fff;--f-ink:#27212c;--f-muted:#655f6a;--f-rail:#cecad2;--f-rail-soft:#e5e2e9;--f-fill:#fcf9ff;--f-radius:12px;--f-body:Manrope,"Segoe UI","Microsoft YaHei",sans-serif;--f-display:var(--f-body)}
+html{color-scheme:light;scrollbar-gutter:auto}
+body{background:transparent;background-image:none;font-family:var(--f-body);color:var(--f-ink);line-height:1.6;min-height:0;height:auto}
+.page{display:block;padding:0}.wrap{max-width:none;border:0;border-radius:0;box-shadow:none;background:transparent}.content{padding:0 4px 24px}
+h1{font-family:var(--f-body);font-size:clamp(32px,4vw,52px);line-height:1.13;letter-spacing:-.035em;font-weight:500;color:var(--f-ink);max-width:19ch}
+.desc{margin-top:20px;font-size:18px;line-height:1.65;color:#544e59;max-width:65ch}
+.provider-note{font-size:14px;line-height:1.7;color:var(--f-muted);margin-top:16px;max-width:72ch}
+.meter{margin-top:32px}.segs{gap:7px}.seg{height:4px}.meter-lbl{font-size:13px;margin-top:12px}.rule{margin:28px 0 32px}
+.sec-title{font-family:var(--f-body);font-size:26px;line-height:1.25;font-weight:600;letter-spacing:-.025em;margin-bottom:26px}
+.grid{gap:26px 22px}label,legend{font-size:16px;line-height:1.55;font-weight:500;margin-bottom:10px}
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],input[type=date],select,textarea{padding:14px 16px;min-height:52px;border-color:var(--f-rail);background:var(--f-fill);font:inherit;font-size:16px;border-radius:12px;box-shadow:none}
+.opts{gap:10px}.opt{padding:15px 18px;border-radius:12px;font-size:16px;line-height:1.5;min-height:54px;transition:background .18s,border-color .18s;color:var(--f-ink)}
+.opt:has(input:checked){background:#f1eef5;border-color:#27212c}.opt:hover{background:#f5f2f9}.opt input{accent-color:#27212c}
+.hint{font-size:13px;color:#655f6a;line-height:1.6}.err{font-size:14px}.btn{font-family:inherit;border-radius:999px!important;padding:14px 26px;min-height:50px;font-size:15px;font-weight:600;box-shadow:none!important}.btn-primary{background:#27212c;border-color:#27212c;color:#fff}.btn-primary:hover{background:#443e49}.nav{margin-top:30px;padding-top:22px;border-top:1px solid var(--f-rail-soft);gap:12px}.btn:disabled{opacity:.5;cursor:wait}
+:focus-visible{outline:2px solid #5c5661!important;outline-offset:4px!important}::selection{background:#dfdbe3;color:#27212c}
+.assure{font-size:13px;margin-top:20px;text-align:left;color:#655f6a}.cima-consent{line-height:1.7}.cima-consent label{opacity:1!important;font-size:14px!important}.cima-consent input{accent-color:#27212c}
+footer[data-cima-legal-footer]{background:transparent!important;text-align:left!important;padding:22px 4px!important;color:#655f6a!important;font-family:inherit!important;font-size:12px!important}
+.success h2{font-family:inherit;font-size:38px}.success p{font-size:17px}
+@media(max-width:600px){.s6,.s4,.s3{grid-column:span 12}.grid{gap:24px}.desc{font-size:16px}.sec-title{font-size:23px}.nav{flex-wrap:wrap}.nav .btn-primary{flex:1}.content{padding-inline:2px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
+html[lang="zh-CN"] #cima-meter-lbl b:last-child::after{content:" 步"}
+
+/* Keep field boundaries and focus visible inside the embedded questionnaire. */
+:root{--f-selected:#eee6fa;--f-focus:#8865ae;--f-focus-fill:#f4eeff}
+.wrap{overflow:visible}.content{padding:8px 8px 28px}.grid,.field,.step,.opts{min-width:0;overflow:visible}
+input:focus,select:focus,textarea:focus{background:var(--f-focus-fill);border-color:var(--f-focus);box-shadow:0 0 0 3px #8865ae26}
+:focus-visible{outline:2px solid var(--f-focus)!important;outline-offset:2px!important}
+.opt:has(input:checked){background:var(--f-selected);border-color:#9c80bc}
+.opt:focus-within{background:var(--f-focus-fill);border-color:var(--f-focus);box-shadow:0 0 0 3px #8865ae26}
+.opt input,.cima-consent input{accent-color:var(--f-focus)}
+.opt input:focus{box-shadow:none}.opt input:focus-visible{outline-offset:3px!important}
+input::selection,textarea::selection,::selection{background:#e2d1f5;color:#27212c}
+.tbl-scroll{padding:6px;margin:-2px -6px 0;scroll-padding-inline:6px}
+.grid-tbl{width:100%}.grid-tbl td:last-child{padding-right:0}
+.date-control{position:relative}.date-control>input{padding-right:58px}
+.date-calendar-toggle{position:absolute;right:5px;top:5px;width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:9px;color:#655075;background:transparent;cursor:pointer}
+.date-calendar-toggle:hover,.date-calendar-toggle[aria-expanded="true"]{background:var(--f-selected);color:#51326f}
+.date-calendar-toggle svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.date-calendar{margin-top:12px;padding:16px;background:#fcf9ff;border:1px solid #d5c4e8;border-radius:12px;color:var(--f-ink);width:100%;max-width:410px}
+.date-calendar-head{display:grid;grid-template-columns:32px minmax(0,1fr) minmax(0,.8fr) 32px;gap:7px;align-items:center}
+.date-calendar-head select{min-height:40px;height:40px;padding:6px 20px 6px 10px;font-size:14px;appearance:auto;background:#fff;border-color:#d5c4e8}
+.date-calendar-nav{width:32px;height:40px;display:grid;place-items:center;border:0;border-radius:8px;background:transparent;color:#655075;cursor:pointer}
+.date-calendar-nav svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.date-calendar-nav:hover{background:var(--f-selected)}.date-calendar-nav:disabled{opacity:.3;cursor:default}
+.date-calendar-week,.date-calendar-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.date-calendar-week{margin:16px 0 4px;text-align:center;color:var(--f-muted);font-size:12px}
+.date-calendar-day{width:100%;min-height:36px;aspect-ratio:1.1;border:1px solid transparent;background:transparent;border-radius:8px;font:inherit;font-size:14px;cursor:pointer;color:var(--f-ink);padding:2px}
+.date-calendar-day:hover:not(:disabled){background:var(--f-selected)}
+.date-calendar-day[aria-pressed="true"]{background:#e9ddf8;border-color:#9c80bc;color:#51326f;font-weight:600}
+.date-calendar-day[aria-current="date"]{border-color:#d5c4e8}.date-calendar-day:disabled{color:#a29ba8;opacity:.5;cursor:default}
+.date-calendar-footer{display:flex;justify-content:space-between;gap:12px;margin-top:12px;padding-top:10px;border-top:1px solid #e5dceb}
+.date-calendar-footer button{border:0;border-radius:6px;padding:6px 4px;background:transparent;font:inherit;font-size:13px;color:#655075;cursor:pointer}
+.date-calendar-footer button:hover{color:#51326f;background:var(--f-selected)}
+@media(max-width:600px){.content{padding-inline:8px}.date-calendar{max-width:100%}}

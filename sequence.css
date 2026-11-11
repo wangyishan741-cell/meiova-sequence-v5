@@ -1,0 +1,13 @@
+.sequence-film{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.front-sequence[data-enabled=true] .sequence-ready>.front-act{background:transparent!important;transform:none!important;visibility:visible!important}
+.sequence-ready #home .photo-object,.sequence-ready #approach .manifesto-photo,.sequence-ready #care .care-portrait{opacity:0!important}
+.sequence-ready .front-act::after{display:none!important}
+.front-stage.sequence-ready{background:#fff}
+@media(prefers-reduced-motion:reduce){.sequence-film{display:none}}
+
+/* The gallery bridge owns the image during release; never show both renderers. */
+.care-bridge-active .sequence-ready .sequence-film{visibility:hidden}
+/* Match the entrance poster exactly to canvas cover/centre rendering. */
+.front-sequence .opening-act .photo-leaf:first-child img{object-fit:cover;object-position:50% 50%;filter:none;transform:scale(1)}
+html{scrollbar-gutter:auto}
+.front-sequence .opening-act .photo-leaf:first-child img{object-position:50% 0%}

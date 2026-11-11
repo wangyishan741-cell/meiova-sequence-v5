@@ -1,0 +1,4 @@
+#fit-frame{display:block;width:100%;border:0;min-height:820px;background:transparent;color-scheme:light}
+.atlas-reader:has(.fit-panel:not([hidden])) .atlas-reader-body{grid-template-columns:23% minmax(0,1fr);gap:8vw}
+.fit-panel{max-width:880px!important;width:100%}
+@media(max-width:850px){.atlas-reader:has(.fit-panel:not([hidden])) .atlas-reader-body{display:block}.atlas-reader:has(.fit-panel:not([hidden])) .atlas-reader-image{display:none}.fit-panel{max-width:none!important}}

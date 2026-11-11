@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Cima first-party tracking --><!--cima-lp-handoff-v1--><meta property="og:type" content="website"><meta property="og:site_name" content="Meiova"><meta property="og:title" content="Meiova IVM Questionnaire · Meiova"><meta property="og:description" content="A few questions about your goals, health and treatment history. Around 10 minutes, with space to answer at your own pace."><meta property="og:url" content="https://os.cimagrowth.com/lp/fertilink/ivm-ivf-self-screening"><meta property="og:image" content="https://momssbzlofjodqodvvvk.supabase.co/functions/v1/brand-asset/5b90c8c3-bab1-4230-ad71-8ec6724b96c4/logo.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Meiova IVM Questionnaire · Meiova"><meta name="twitter:description" content="A few questions about your goals, health and treatment history. Around 10 minutes, with space to answer at your own pace."><meta name="twitter:image" content="https://momssbzlofjodqodvvvk.supabase.co/functions/v1/brand-asset/5b90c8c3-bab1-4230-ad71-8ec6724b96c4/logo.png"><style id="cima-brand-vars">:root{--brand-primary:#3B1D4A;--brand-secondary:#7A4F94;--brand-accent:#C9A86A;--brand-button:#3B1D4A;--brand-button-text:#FFFFFF;--brand-text:#2A2230;--brand-bg:#F6F1EA}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meiova IVM Questionnaire · Meiova</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none !important}
+:root{
+--f-accent:#3B1D4A;--f-accent-ink:#FFFFFF;--f-accent-dark:#32183e;
+--f-ink:#2A2230;--f-muted:#837f87;--f-surface:#FFFFFF;
+--f-rail:#dddcde;--f-rail-soft:#ecebec;--f-fill:#f8f8f8;
+--f-radius:10px;--f-danger:#B42318;
+--f-body:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;--f-display:"Cormorant Garamond",ui-serif,Georgia,Cambria,"Times New Roman",Times,serif;
+}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--f-body);background:#f4f4f5;background-image:radial-gradient(900px 520px at 50% -8%,rgba(59, 29, 74, 0.1) 0%,transparent 62%);background-repeat:no-repeat;color:var(--f-ink);line-height:1.5;min-height:100vh;-webkit-font-smoothing:antialiased}
+.page{display:flex;align-items:flex-start;justify-content:center;padding:clamp(16px,4vw,48px) 16px}
+body>footer{margin-top:8px}
+.wrap{width:100%;max-width:660px;background:var(--f-surface);border-radius:18px;border:1px solid #ecebec;box-shadow:0 1px 2px rgba(42, 34, 48, 0.04),0 14px 40px -18px rgba(42, 34, 48, 0.22);overflow:hidden}
+.content{padding:clamp(24px,5vw,40px)}
+.ident{display:flex;align-items:center;margin-bottom:22px}
+.ident img{max-height:56px;max-width:210px;width:auto;height:auto;display:block}
+.ident .nm{font-family:var(--f-display);font-size:15px;font-weight:600;letter-spacing:-.01em;color:var(--f-accent)}
+h1{font-family:var(--f-display);font-size:clamp(23px,4.4vw,29px);line-height:1.18;letter-spacing:-.02em;font-weight:600;color:#2A2230}
+.desc{margin-top:9px;font-size:15px;color:var(--f-muted);line-height:1.55;max-width:54ch}
+.meter{margin-top:22px}
+.segs{display:flex;gap:4px}
+.seg{flex:1;height:5px;padding:0;border:0;border-radius:99px;background:var(--f-rail-soft);cursor:default;transition:background-color .3s ease,opacity .3s ease}
+.seg[data-state="done"]{background:var(--f-accent);opacity:.4;cursor:pointer}
+.seg[data-state="now"]{background:var(--f-accent)}
+.seg:focus-visible{outline:2px solid var(--f-accent);outline-offset:3px}
+.meter-lbl{margin-top:10px;font-size:12.5px;color:var(--f-muted)}
+.meter-lbl b{color:var(--f-ink);font-weight:600}
+.rule{height:1px;background:var(--f-rail-soft);border:0;margin:24px 0 22px}
+.alert{display:none;margin-bottom:18px;padding:12px 14px;border-radius:var(--f-radius);background:#FEF3F2;border:1px solid #FDA29B;color:#912018;font-size:13.5px;line-height:1.5}
+.alert.show{display:block}
+.step{border:0;padding:0;margin:0}
+.sec-title{font-family:var(--f-display);font-size:17px;font-weight:600;letter-spacing:-.01em;color:var(--f-ink);margin-bottom:16px}
+.sections-flow .step+.step{margin-top:30px;padding-top:26px;border-top:1px solid var(--f-rail-soft)}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px 14px}
+.field{grid-column:span 12;min-width:0;border:0;padding:0;margin:0}
+.s3{grid-column:span 3}.s4{grid-column:span 4}.s6{grid-column:span 6}.s12{grid-column:span 12}
+label,legend{display:block;font-size:13.5px;font-weight:600;color:var(--f-ink);margin-bottom:7px;padding:0;line-height:1.4}
+.req{color:var(--f-accent);font-weight:700;margin-left:1px}
+.hint{margin-top:6px;font-size:12.5px;color:var(--f-muted);line-height:1.45}
+.err{margin-top:6px;font-size:12.5px;color:var(--f-danger);font-weight:600;line-height:1.45}
+input[type=text],input[type=email],input[type=tel],input[type=number],input[type=url],input[type=date],select,textarea{width:100%;padding:12px 14px;font-size:16px;font-family:inherit;line-height:1.4;color:var(--f-ink);background:var(--f-fill);border:1px solid var(--f-rail);border-radius:var(--f-radius);transition:border-color .15s ease,box-shadow .15s ease,background-color .15s ease;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+input::placeholder,textarea::placeholder{color:var(--f-muted);opacity:.7}
+input:hover,select:hover,textarea:hover{border-color:#bbb8bd}
+input:focus,select:focus,textarea:focus{outline:none;background:#FFFFFF;border-color:var(--f-accent);box-shadow:0 0 0 3px rgba(59, 29, 74, 0.16)}
+textarea{resize:vertical;min-height:104px}
+.field.has-error input,.field.has-error select,.field.has-error textarea{border-color:var(--f-danger);background:#FEF3F2}
+.select-wrap{position:relative}
+.select-wrap select{padding-right:42px;cursor:pointer}
+.select-wrap .chevron{position:absolute;right:15px;top:50%;transform:translateY(-50%);width:12px;height:8px;color:var(--f-muted);pointer-events:none}
+.opts{display:grid;gap:8px}
+.opt{display:flex;align-items:flex-start;gap:11px;margin:0;padding:12px 14px;font-size:15px;font-weight:500;border:1px solid var(--f-rail);border-radius:var(--f-radius);background:var(--f-fill);cursor:pointer;transition:border-color .15s ease,background-color .15s ease}
+.opt:hover{border-color:var(--f-accent)}
+.opt input{flex:0 0 auto;width:17px;height:17px;margin:1px 0 0;accent-color:var(--f-accent);cursor:pointer}
+.opt span{color:var(--f-ink)}
+.opt:focus-within{box-shadow:0 0 0 3px rgba(59, 29, 74, 0.16)}
+.opt:has(input:checked){border-color:var(--f-accent);background:rgba(59, 29, 74, 0.07)}
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:4px}
+.grid-tbl{width:100%;border-collapse:separate;border-spacing:0 6px;min-width:520px}
+.grid-tbl th{text-align:left;font-size:12px;font-weight:600;color:var(--f-muted);padding:0 8px 2px 0;white-space:nowrap}
+.grid-tbl td{padding:0 6px 0 0;vertical-align:top}
+.grid-tbl input,.grid-tbl select,.grid-tbl textarea{padding:9px 10px;font-size:16px}
+.grid-tbl textarea{min-height:42px}
+.rowdel{width:34px;padding-right:0 !important}
+.grid-tbl .del{width:30px;height:38px;border:1px solid var(--f-rail);background:var(--f-fill);border-radius:var(--f-radius);color:var(--f-muted);font-size:17px;line-height:1;cursor:pointer}
+.grid-tbl .del:hover{border-color:var(--f-danger);color:var(--f-danger)}
+.field.tbl.has-error .grid-tbl input,.field.tbl.has-error .grid-tbl select{border-color:var(--f-danger)}
+.addrow{margin-top:10px;padding:9px 14px;font-size:14px}
+.cima-consent{border-top:1px solid var(--f-rail-soft);padding-top:18px;margin-top:24px}
+.cima-consent+.cima-consent{border-top:0;padding-top:0;margin-top:12px}
+.btn{appearance:none;border:1px solid transparent;border-radius:var(--f-radius);font-family:inherit;font-size:15.5px;font-weight:600;line-height:1.2;padding:13px 22px;cursor:pointer;transition:background-color .15s ease,border-color .15s ease,transform .06s ease}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:2px solid var(--f-accent);outline-offset:2px}
+.btn-primary{background:var(--f-accent);color:var(--f-accent-ink)}
+.btn-primary:hover{background:var(--f-accent-dark)}
+.btn-primary:disabled{opacity:.55;cursor:not-allowed}
+.btn-ghost{background:transparent;color:var(--f-ink);border-color:var(--f-rail)}
+.btn-ghost:hover{background:var(--f-fill);border-color:#bbb8bd}
+.btn-ghost:disabled{opacity:.45;cursor:not-allowed}
+#submit-btn{width:100%;margin-top:22px}
+.nav{display:flex;align-items:center;gap:10px;margin-top:24px}
+.nav .spacer{flex:1}
+.nav .btn{margin-top:0}
+.nav #submit-btn{width:auto;margin-top:0}
+.assure{margin-top:18px;font-size:12.5px;color:var(--f-muted);line-height:1.5}
+.success{text-align:center;padding:28px 0 10px}
+.success .check{width:60px;height:60px;border-radius:50%;background:rgba(59, 29, 74, 0.12);margin:0 auto 20px;display:flex;align-items:center;justify-content:center}
+.success .check svg{width:28px;height:28px;stroke:var(--f-accent);stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.success h2{font-family:var(--f-display);font-size:21px;font-weight:600;letter-spacing:-.01em;color:#2A2230;margin-bottom:10px}
+.success p{font-size:15px;color:var(--f-muted);line-height:1.6;max-width:46ch;margin:0 auto;white-space:pre-line}
+.spin{width:36px;height:36px;border:3px solid rgba(59, 29, 74, 0.18);border-top-color:var(--f-accent);border-radius:50%;margin:0 auto 20px;animation:cimaSpin .8s linear infinite}
+@keyframes cimaSpin{to{transform:rotate(360deg)}}
+@keyframes cimaIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.step.enter{animation:cimaIn .26s ease both}
+@media (max-width:560px){.s3,.s4,.s6{grid-column:span 12}.grid-tbl{min-width:460px}}
+@media (max-width:460px){.nav{flex-wrap:wrap}.nav .spacer{display:none}.nav .btn{flex:1 1 auto}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}
+</style>
+<!--gos-attr-v1--><link rel="stylesheet" href="fit.css"></head>
+<body>
+<div class="page">
+<div class="wrap">
+  <div class="content">
+    <div id="form-wrap">
+      <header>
+        
+        <h1>Could IVM be right for you?</h1>
+        <p class="desc">A few questions about your goals, health and treatment history. Around 10 minutes, with space to answer at your own pace.</p>
+        <p class="provider-note">This questionnaire is provided by Meiova. Your answers and any uploaded reports are sent to the New Hope Fertility Center clinical team. A physician will assess suitability; this is not an automated diagnosis.</p><div class="meter" id="cima-meter" hidden><div class="segs" id="cima-segs"><button type="button" class="seg" data-i="0" data-state="todo" title="About you" aria-label="About you"></button><button type="button" class="seg" data-i="1" data-state="todo" title="Your goals" aria-label="Your goals"></button><button type="button" class="seg" data-i="2" data-state="todo" title="Travel and treatment plan" aria-label="Travel and treatment plan"></button><button type="button" class="seg" data-i="3" data-state="todo" title="Pregnancy history" aria-label="Pregnancy history"></button><button type="button" class="seg" data-i="4" data-state="todo" title="Periods and ovaries" aria-label="Periods and ovaries"></button><button type="button" class="seg" data-i="5" data-state="todo" title="Tests you have had" aria-label="Tests you have had"></button><button type="button" class="seg" data-i="6" data-state="todo" title="Previous treatment" aria-label="Previous treatment"></button><button type="button" class="seg" data-i="7" data-state="todo" title="Sperm source" aria-label="Sperm source"></button><button type="button" class="seg" data-i="8" data-state="todo" title="Health history" aria-label="Health history"></button><button type="button" class="seg" data-i="9" data-state="todo" title="Anything else" aria-label="Anything else"></button></div><div class="meter-lbl" id="cima-meter-lbl" aria-live="polite">Step <b>1</b> of <b>10</b></div></div>
+      </header>
+      <hr class="rule">
+      <div class="alert" id="error-banner" role="alert" aria-live="polite"></div>
+      <form id="cima-form" novalidate>
+<section class="step" data-cima-step="0" data-cima-step-label="About you"><h2 class="sec-title">About you</h2><div class="grid"><div class="field s6" data-cima-field="legal_first_name" data-cima-label="What is your legal first name?"><label for="f_legal_first_name">What is your legal first name? <span class="req" aria-hidden="true">*</span></label><input type="text" id="f_legal_first_name" name="legal_first_name" placeholder="" autocomplete="given-name" required><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="legal_last_name" data-cima-label="And your legal last name?"><label for="f_legal_last_name">And your legal last name? <span class="req" aria-hidden="true">*</span></label><input type="text" id="f_legal_last_name" name="legal_last_name" placeholder="" autocomplete="family-name" required><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="date_of_birth" data-cima-label="What is your date of birth?"><label for="f_date_of_birth">What is your date of birth? <span class="req" aria-hidden="true">*</span></label><input type="text" id="f_date_of_birth" name="date_of_birth" placeholder="YYYY-MM-DD" inputmode="numeric" maxlength="10" autocomplete="bday" aria-describedby="dob-format" required><p class="hint" id="dob-format">YYYY-MM-DD · for example, 1992-06-15</p><p class="err" data-cima-err hidden></p></div>
+<div class="field s12" data-cima-field="address_state" data-cima-label="Which state do you live in?"><label for="f_address_state">Which state do you live in? <span class="req" aria-hidden="true">*</span></label><div class="select-wrap"><select id="f_address_state" name="address_state" required><option value="">Select...</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option><option value="Puerto Rico">Puerto Rico</option><option value="I live outside the United States">I live outside the United States</option></select><svg class="chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p class="hint">Care is governed by the state you live in. This tells us whether we can see you now or should add you to our waitlist for your state.</p><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="email" data-cima-label="What email address should we use?"><label for="f_email">What email address should we use? <span class="req" aria-hidden="true">*</span></label><input type="email" id="f_email" name="email" placeholder="" autocomplete="email" inputmode="email" required><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="mobile_phone" data-cima-label="What is the best mobile number for you?"><label for="f_mobile_phone">What is the best mobile number for you? <span class="req" aria-hidden="true">*</span></label><input type="tel" id="f_mobile_phone" name="mobile_phone" placeholder="" autocomplete="tel" inputmode="tel" required><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="has_ovaries" data-cima-label="Do you currently have ovaries?"><legend>Do you currently have ovaries? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_has_ovaries_0"><input type="radio" id="f_has_ovaries_0" name="has_ovaries" value="Yes" required><span>Yes</span></label><label class="opt" for="f_has_ovaries_1"><input type="radio" id="f_has_ovaries_1" name="has_ovaries" value="No" ><span>No</span></label><label class="opt" for="f_has_ovaries_2"><input type="radio" id="f_has_ovaries_2" name="has_ovaries" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s6" data-cima-field="height_value" data-cima-label="How tall are you? Feet and inches or centimeters is fine." data-cima-measure="measurement" data-cima-measure-key="height_value" data-cima-unit-field="height_value_unit" data-cima-measure-required="1"><label for="f_height_value">How tall are you? Feet and inches or centimeters is fine. <span class="req" aria-hidden="true">*</span></label><div style="display:flex;gap:8px;align-items:flex-start"><input type="number" inputmode="decimal" id="f_height_value" name="height_value__u" data-cima-u placeholder="" aria-label="How tall are you? Feet and inches or centimeters is fine." style="flex:1"><select name="height_value_unit" data-cima-unit aria-label="Unit for How tall are you? Feet and inches or centimeters is fine." style="max-width:9rem"><option value="cm">cm</option><option value="in" selected>in</option><option value="ft">ft</option><option value="m">m</option></select></div><input type="hidden" name="height_value" data-cima-value><p class="hint" data-cima-soft hidden></p><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="weight_value" data-cima-label="And your current weight? Pounds or kilograms." data-cima-measure="measurement" data-cima-measure-key="weight_value" data-cima-unit-field="weight_value_unit" data-cima-measure-required="1"><label for="f_weight_value">And your current weight? Pounds or kilograms. <span class="req" aria-hidden="true">*</span></label><div style="display:flex;gap:8px;align-items:flex-start"><input type="number" inputmode="decimal" id="f_weight_value" name="weight_value__u" data-cima-u placeholder="" aria-label="And your current weight? Pounds or kilograms." style="flex:1"><select name="weight_value_unit" data-cima-unit aria-label="Unit for And your current weight? Pounds or kilograms." style="max-width:9rem"><option value="kg">kg</option><option value="lb" selected>lb</option><option value="st">st</option></select></div><input type="hidden" name="weight_value" data-cima-value><p class="hint" data-cima-soft hidden></p><p class="err" data-cima-err hidden></p></div></div></section>
+<section class="step" data-cima-step="1" data-cima-step-label="Your goals"><h2 class="sec-title">Your goals</h2><div class="grid"><fieldset class="field s12" data-cima-field="family_building_goal" data-cima-label="What are you hoping to do right now?"><legend>What are you hoping to do right now? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_family_building_goal_0"><input type="radio" id="f_family_building_goal_0" name="family_building_goal" value="Becoming pregnant now" required><span>Becoming pregnant now</span></label><label class="opt" for="f_family_building_goal_1"><input type="radio" id="f_family_building_goal_1" name="family_building_goal" value="Creating and freezing embryos" ><span>Creating and freezing embryos</span></label><label class="opt" for="f_family_building_goal_2"><input type="radio" id="f_family_building_goal_2" name="family_building_goal" value="Freezing eggs" ><span>Freezing eggs</span></label><label class="opt" for="f_family_building_goal_3"><input type="radio" id="f_family_building_goal_3" name="family_building_goal" value="Fertility preservation before medical treatment" ><span>Fertility preservation before medical treatment</span></label><label class="opt" for="f_family_building_goal_4"><input type="radio" id="f_family_building_goal_4" name="family_building_goal" value="Learning about my options" ><span>Learning about my options</span></label><label class="opt" for="f_family_building_goal_5"><input type="radio" id="f_family_building_goal_5" name="family_building_goal" value="Other" ><span>Other</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="assistance_needed" data-cima-label="Will you need any of these? You can pick more than one."><legend>Will you need any of these? You can pick more than one. <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_assistance_needed_0"><input type="checkbox" id="f_assistance_needed_0" name="assistance_needed[]" value="Partner sperm" required><span>Partner sperm</span></label><label class="opt" for="f_assistance_needed_1"><input type="checkbox" id="f_assistance_needed_1" name="assistance_needed[]" value="Donor sperm" ><span>Donor sperm</span></label><label class="opt" for="f_assistance_needed_2"><input type="checkbox" id="f_assistance_needed_2" name="assistance_needed[]" value="Donor eggs" ><span>Donor eggs</span></label><label class="opt" for="f_assistance_needed_3"><input type="checkbox" id="f_assistance_needed_3" name="assistance_needed[]" value="Gestational carrier" ><span>Gestational carrier</span></label><label class="opt" for="f_assistance_needed_4"><input type="checkbox" id="f_assistance_needed_4" name="assistance_needed[]" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="ivm_motivation" data-cima-label="What is drawing you to IVM? Pick anything that applies."><legend>What is drawing you to IVM? Pick anything that applies. <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ivm_motivation_0"><input type="checkbox" id="f_ivm_motivation_0" name="ivm_motivation[]" value="I want fewer hormone injections" required><span>I want fewer hormone injections</span></label><label class="opt" for="f_ivm_motivation_1"><input type="checkbox" id="f_ivm_motivation_1" name="ivm_motivation[]" value="I am afraid of needles" ><span>I am afraid of needles</span></label><label class="opt" for="f_ivm_motivation_2"><input type="checkbox" id="f_ivm_motivation_2" name="ivm_motivation[]" value="I cannot attend frequent monitoring appointments" ><span>I cannot attend frequent monitoring appointments</span></label><label class="opt" for="f_ivm_motivation_3"><input type="checkbox" id="f_ivm_motivation_3" name="ivm_motivation[]" value="My work or family schedule is very busy" ><span>My work or family schedule is very busy</span></label><label class="opt" for="f_ivm_motivation_4"><input type="checkbox" id="f_ivm_motivation_4" name="ivm_motivation[]" value="I previously had significant side effects from fertility medication" ><span>I previously had significant side effects from fertility medication</span></label><label class="opt" for="f_ivm_motivation_5"><input type="checkbox" id="f_ivm_motivation_5" name="ivm_motivation[]" value="I have PCOS or a high ovarian reserve" ><span>I have PCOS or a high ovarian reserve</span></label><label class="opt" for="f_ivm_motivation_6"><input type="checkbox" id="f_ivm_motivation_6" name="ivm_motivation[]" value="I am concerned about ovarian hyperstimulation syndrome" ><span>I am concerned about ovarian hyperstimulation syndrome</span></label><label class="opt" for="f_ivm_motivation_7"><input type="checkbox" id="f_ivm_motivation_7" name="ivm_motivation[]" value="My fallopian tubes are blocked or damaged" ><span>My fallopian tubes are blocked or damaged</span></label><label class="opt" for="f_ivm_motivation_8"><input type="checkbox" id="f_ivm_motivation_8" name="ivm_motivation[]" value="My partner has a low sperm count or another sperm problem" ><span>My partner has a low sperm count or another sperm problem</span></label><label class="opt" for="f_ivm_motivation_9"><input type="checkbox" id="f_ivm_motivation_9" name="ivm_motivation[]" value="I need donor sperm" ><span>I need donor sperm</span></label><label class="opt" for="f_ivm_motivation_10"><input type="checkbox" id="f_ivm_motivation_10" name="ivm_motivation[]" value="I need genetic testing of embryos" ><span>I need genetic testing of embryos</span></label><label class="opt" for="f_ivm_motivation_11"><input type="checkbox" id="f_ivm_motivation_11" name="ivm_motivation[]" value="Conventional IVF did not work for me" ><span>Conventional IVF did not work for me</span></label><label class="opt" for="f_ivm_motivation_12"><input type="checkbox" id="f_ivm_motivation_12" name="ivm_motivation[]" value="My doctor recommended IVM" ><span>My doctor recommended IVM</span></label><label class="opt" for="f_ivm_motivation_13"><input type="checkbox" id="f_ivm_motivation_13" name="ivm_motivation[]" value="Other" ><span>Other</span></label></div><p class="err" data-cima-err hidden></p></fieldset></div></section>
+<section class="step" data-cima-step="2" data-cima-step-label="Travel and treatment plan"><h2 class="sec-title">Travel and treatment plan</h2><div class="grid"><fieldset class="field s12" data-cima-field="ny_travel" data-cima-label="Your egg retrieval takes place at the New Hope Fertility Center laboratory in New York City. Would you be able to travel to New York for it?"><legend>Your egg retrieval takes place at the New Hope Fertility Center laboratory in New York City. Would you be able to travel to New York for it? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ny_travel_0"><input type="radio" id="f_ny_travel_0" name="ny_travel" value="Yes" required><span>Yes</span></label><label class="opt" for="f_ny_travel_1"><input type="radio" id="f_ny_travel_1" name="ny_travel" value="Yes, with some planning" ><span>Yes, with some planning</span></label><label class="opt" for="f_ny_travel_2"><input type="radio" id="f_ny_travel_2" name="ny_travel" value="I live in or near New York" ><span>I live in or near New York</span></label><label class="opt" for="f_ny_travel_3"><input type="radio" id="f_ny_travel_3" name="ny_travel" value="No" ><span>No</span></label><label class="opt" for="f_ny_travel_4"><input type="radio" id="f_ny_travel_4" name="ny_travel" value="Not sure" ><span>Not sure</span></label></div><p class="hint">Most of your care happens from home. The retrieval is the one step that happens in person, in New York.</p><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="repeat_trip_ok" data-cima-label="Some people need more than one retrieval to create enough embryos. If your physician recommends it, would a second trip to New York be possible?"><legend>Some people need more than one retrieval to create enough embryos. If your physician recommends it, would a second trip to New York be possible? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_repeat_trip_ok_0"><input type="radio" id="f_repeat_trip_ok_0" name="repeat_trip_ok" value="Yes" required><span>Yes</span></label><label class="opt" for="f_repeat_trip_ok_1"><input type="radio" id="f_repeat_trip_ok_1" name="repeat_trip_ok" value="Maybe" ><span>Maybe</span></label><label class="opt" for="f_repeat_trip_ok_2"><input type="radio" id="f_repeat_trip_ok_2" name="repeat_trip_ok" value="No" ><span>No</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="freeze_all_ok" data-cima-label="With IVM, every embryo is frozen first and transferred in a later cycle, not during the same trip. Does that timing work for you?"><legend>With IVM, every embryo is frozen first and transferred in a later cycle, not during the same trip. Does that timing work for you? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_freeze_all_ok_0"><input type="radio" id="f_freeze_all_ok_0" name="freeze_all_ok" value="Yes" required><span>Yes</span></label><label class="opt" for="f_freeze_all_ok_1"><input type="radio" id="f_freeze_all_ok_1" name="freeze_all_ok" value="I would like to learn more about it" ><span>I would like to learn more about it</span></label><label class="opt" for="f_freeze_all_ok_2"><input type="radio" id="f_freeze_all_ok_2" name="freeze_all_ok" value="No, I want a fresh transfer" ><span>No, I want a fresh transfer</span></label></div><p class="hint">Freezing every embryo lets the lab finish maturing and growing them, and lets your body reset before the transfer.</p><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="transfer_location_pref" data-cima-label="When the time comes, where would you prefer to have your embryo transfer?"><legend>When the time comes, where would you prefer to have your embryo transfer? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_transfer_location_pref_0"><input type="radio" id="f_transfer_location_pref_0" name="transfer_location_pref" value="In New York" required><span>In New York</span></label><label class="opt" for="f_transfer_location_pref_1"><input type="radio" id="f_transfer_location_pref_1" name="transfer_location_pref" value="At a partner clinic closer to home" ><span>At a partner clinic closer to home</span></label><label class="opt" for="f_transfer_location_pref_2"><input type="radio" id="f_transfer_location_pref_2" name="transfer_location_pref" value="Not sure yet" ><span>Not sure yet</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="research_contact_ok" data-cima-label="We sometimes run approved research studies on IVM. Would you like our team to let you know about any you may be able to join? It is completely optional and does not affect your care."><legend>We sometimes run approved research studies on IVM. Would you like our team to let you know about any you may be able to join? It is completely optional and does not affect your care.</legend><div class="opts"><label class="opt" for="f_research_contact_ok_0"><input type="radio" id="f_research_contact_ok_0" name="research_contact_ok" value="Yes" ><span>Yes</span></label><label class="opt" for="f_research_contact_ok_1"><input type="radio" id="f_research_contact_ok_1" name="research_contact_ok" value="No" ><span>No</span></label></div><p class="err" data-cima-err hidden></p></fieldset></div></section>
+<section class="step" data-cima-step="3" data-cima-step-label="Pregnancy history"><h2 class="sec-title">Pregnancy history</h2><div class="grid"><fieldset class="field s12" data-cima-field="currently_pregnant" data-cima-label="Are you currently pregnant, or is there a chance you might be?"><legend>Are you currently pregnant, or is there a chance you might be? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_currently_pregnant_0"><input type="radio" id="f_currently_pregnant_0" name="currently_pregnant" value="No" required><span>No</span></label><label class="opt" for="f_currently_pregnant_1"><input type="radio" id="f_currently_pregnant_1" name="currently_pregnant" value="Yes" ><span>Yes</span></label><label class="opt" for="f_currently_pregnant_2"><input type="radio" id="f_currently_pregnant_2" name="currently_pregnant" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="ttc_duration" data-cima-label="How long have you been trying to become pregnant?"><legend>How long have you been trying to become pregnant? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ttc_duration_0"><input type="radio" id="f_ttc_duration_0" name="ttc_duration" value="Not currently trying" required><span>Not currently trying</span></label><label class="opt" for="f_ttc_duration_1"><input type="radio" id="f_ttc_duration_1" name="ttc_duration" value="Less than 6 months" ><span>Less than 6 months</span></label><label class="opt" for="f_ttc_duration_2"><input type="radio" id="f_ttc_duration_2" name="ttc_duration" value="6 to 11 months" ><span>6 to 11 months</span></label><label class="opt" for="f_ttc_duration_3"><input type="radio" id="f_ttc_duration_3" name="ttc_duration" value="12 to 23 months" ><span>12 to 23 months</span></label><label class="opt" for="f_ttc_duration_4"><input type="radio" id="f_ttc_duration_4" name="ttc_duration" value="Two years or longer" ><span>Two years or longer</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="ever_pregnant" data-cima-label="Have you ever been pregnant?"><legend>Have you ever been pregnant? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ever_pregnant_0"><input type="radio" id="f_ever_pregnant_0" name="ever_pregnant" value="No" required><span>No</span></label><label class="opt" for="f_ever_pregnant_1"><input type="radio" id="f_ever_pregnant_1" name="ever_pregnant" value="Yes" ><span>Yes</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s6" data-cima-field="miscarriages" data-cima-label="How many miscarriages have you had?"><label for="f_miscarriages">How many miscarriages have you had?</label><input type="number" id="f_miscarriages" name="miscarriages" placeholder="" inputmode="decimal" ><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="living_children" data-cima-label="How many living children do you have?"><label for="f_living_children">How many living children do you have?</label><input type="number" id="f_living_children" name="living_children" placeholder="" inputmode="decimal" ><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="breastfeeding" data-cima-label="Are you currently breastfeeding?"><legend>Are you currently breastfeeding? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_breastfeeding_0"><input type="radio" id="f_breastfeeding_0" name="breastfeeding" value="No" required><span>No</span></label><label class="opt" for="f_breastfeeding_1"><input type="radio" id="f_breastfeeding_1" name="breastfeeding" value="Yes" ><span>Yes</span></label></div><p class="err" data-cima-err hidden></p></fieldset></div></section>
+<section class="step" data-cima-step="4" data-cima-step-label="Periods and ovaries"><h2 class="sec-title">Periods and ovaries</h2><div class="grid"><div class="field s12" data-cima-field="cycle_frequency" data-cima-label="How often do your periods usually come?"><label for="f_cycle_frequency">How often do your periods usually come? <span class="req" aria-hidden="true">*</span></label><div class="select-wrap"><select id="f_cycle_frequency" name="cycle_frequency" required><option value="">Select...</option><option value="Every 21 to 35 days">Every 21 to 35 days</option><option value="Less than every 21 days">Less than every 21 days</option><option value="More than every 35 days">More than every 35 days</option><option value="Very irregular">Very irregular</option><option value="No periods">No periods</option><option value="I use medication that changes or stops my periods">I use medication that changes or stops my periods</option><option value="Not sure">Not sure</option></select><svg class="chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="gyn_diagnoses" data-cima-label="Have you been diagnosed with any of these?"><legend>Have you been diagnosed with any of these? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_gyn_diagnoses_0"><input type="checkbox" id="f_gyn_diagnoses_0" name="gyn_diagnoses[]" value="PCOS or polycystic ovaries" required><span>PCOS or polycystic ovaries</span></label><label class="opt" for="f_gyn_diagnoses_1"><input type="checkbox" id="f_gyn_diagnoses_1" name="gyn_diagnoses[]" value="Diminished ovarian reserve" ><span>Diminished ovarian reserve</span></label><label class="opt" for="f_gyn_diagnoses_2"><input type="checkbox" id="f_gyn_diagnoses_2" name="gyn_diagnoses[]" value="Premature ovarian insufficiency" ><span>Premature ovarian insufficiency</span></label><label class="opt" for="f_gyn_diagnoses_3"><input type="checkbox" id="f_gyn_diagnoses_3" name="gyn_diagnoses[]" value="Endometriosis" ><span>Endometriosis</span></label><label class="opt" for="f_gyn_diagnoses_4"><input type="checkbox" id="f_gyn_diagnoses_4" name="gyn_diagnoses[]" value="Ovarian cysts" ><span>Ovarian cysts</span></label><label class="opt" for="f_gyn_diagnoses_5"><input type="checkbox" id="f_gyn_diagnoses_5" name="gyn_diagnoses[]" value="Uterine fibroids" ><span>Uterine fibroids</span></label><label class="opt" for="f_gyn_diagnoses_6"><input type="checkbox" id="f_gyn_diagnoses_6" name="gyn_diagnoses[]" value="Uterine polyps" ><span>Uterine polyps</span></label><label class="opt" for="f_gyn_diagnoses_7"><input type="checkbox" id="f_gyn_diagnoses_7" name="gyn_diagnoses[]" value="Adenomyosis" ><span>Adenomyosis</span></label><label class="opt" for="f_gyn_diagnoses_8"><input type="checkbox" id="f_gyn_diagnoses_8" name="gyn_diagnoses[]" value="Blocked or damaged fallopian tubes" ><span>Blocked or damaged fallopian tubes</span></label><label class="opt" for="f_gyn_diagnoses_9"><input type="checkbox" id="f_gyn_diagnoses_9" name="gyn_diagnoses[]" value="Hydrosalpinx" ><span>Hydrosalpinx</span></label><label class="opt" for="f_gyn_diagnoses_10"><input type="checkbox" id="f_gyn_diagnoses_10" name="gyn_diagnoses[]" value="None" ><span>None</span></label><label class="opt" for="f_gyn_diagnoses_11"><input type="checkbox" id="f_gyn_diagnoses_11" name="gyn_diagnoses[]" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="ovary_removed" data-cima-label="Have you had an ovary removed?"><legend>Have you had an ovary removed? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ovary_removed_0"><input type="radio" id="f_ovary_removed_0" name="ovary_removed" value="No" required><span>No</span></label><label class="opt" for="f_ovary_removed_1"><input type="radio" id="f_ovary_removed_1" name="ovary_removed" value="One ovary" ><span>One ovary</span></label><label class="opt" for="f_ovary_removed_2"><input type="radio" id="f_ovary_removed_2" name="ovary_removed" value="Both ovaries" ><span>Both ovaries</span></label><label class="opt" for="f_ovary_removed_3"><input type="radio" id="f_ovary_removed_3" name="ovary_removed" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="ovarian_surgery" data-cima-label="Have you had surgery on either ovary?"><legend>Have you had surgery on either ovary? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_ovarian_surgery_0"><input type="radio" id="f_ovarian_surgery_0" name="ovarian_surgery" value="No" required><span>No</span></label><label class="opt" for="f_ovarian_surgery_1"><input type="radio" id="f_ovarian_surgery_1" name="ovarian_surgery" value="Yes" ><span>Yes</span></label><label class="opt" for="f_ovarian_surgery_2"><input type="radio" id="f_ovarian_surgery_2" name="ovarian_surgery" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s12" data-cima-field="ovarian_surgery_detail" data-cima-label="What kind of surgery was it, and roughly when?"><label for="f_ovarian_surgery_detail">What kind of surgery was it, and roughly when?</label><input type="text" id="f_ovarian_surgery_detail" name="ovarian_surgery_detail" placeholder="" ><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="gonadotoxic_therapy" data-cima-label="Have you had chemotherapy or pelvic radiation?"><legend>Have you had chemotherapy or pelvic radiation? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_gonadotoxic_therapy_0"><input type="radio" id="f_gonadotoxic_therapy_0" name="gonadotoxic_therapy" value="No" required><span>No</span></label><label class="opt" for="f_gonadotoxic_therapy_1"><input type="radio" id="f_gonadotoxic_therapy_1" name="gonadotoxic_therapy" value="Yes" ><span>Yes</span></label><label class="opt" for="f_gonadotoxic_therapy_2"><input type="radio" id="f_gonadotoxic_therapy_2" name="gonadotoxic_therapy" value="Treatment is planned soon" ><span>Treatment is planned soon</span></label></div><p class="err" data-cima-err hidden></p></fieldset></div></section>
+<section class="step" data-cima-step="5" data-cima-step-label="Tests you have had"><h2 class="sec-title">Tests you have had</h2><div class="grid"><fieldset class="field s12" data-cima-field="amh_tested" data-cima-label="Have you had an AMH blood test done?"><legend>Have you had an AMH blood test done? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_amh_tested_0"><input type="radio" id="f_amh_tested_0" name="amh_tested" value="Yes" required><span>Yes</span></label><label class="opt" for="f_amh_tested_1"><input type="radio" id="f_amh_tested_1" name="amh_tested" value="No" ><span>No</span></label><label class="opt" for="f_amh_tested_2"><input type="radio" id="f_amh_tested_2" name="amh_tested" value="Not sure" ><span>Not sure</span></label></div><p class="hint">AMH is a blood test that estimates your egg supply. If you have not had it, that is completely fine. We can help you arrange it near home.</p><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s6" data-cima-field="amh_value" data-cima-label="Do you know your AMH result? Please include the units if you have them." data-cima-measure="measurement" data-cima-measure-key="amh_value" data-cima-unit-field="amh_value_unit"><label for="f_amh_value">Do you know your AMH result? Please include the units if you have them.</label><div style="display:flex;gap:8px;align-items:flex-start"><input type="number" inputmode="decimal" id="f_amh_value" name="amh_value__u" data-cima-u placeholder="" aria-label="Do you know your AMH result? Please include the units if you have them." style="flex:1"><select name="amh_value_unit" data-cima-unit aria-label="Unit for Do you know your AMH result? Please include the units if you have them." style="max-width:9rem"><option value="ng/mL" selected>ng/mL</option><option value="pmol/L">pmol/L</option></select></div><input type="hidden" name="amh_value" data-cima-value><p class="hint" data-cima-soft hidden></p><p class="hint">Enter the number and choose the unit shown on your report, ng/mL or pmol/L.</p><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="afc_tested" data-cima-label="Have you had a baseline ultrasound where they counted your follicles?"><legend>Have you had a baseline ultrasound where they counted your follicles? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_afc_tested_0"><input type="radio" id="f_afc_tested_0" name="afc_tested" value="Yes" required><span>Yes</span></label><label class="opt" for="f_afc_tested_1"><input type="radio" id="f_afc_tested_1" name="afc_tested" value="No" ><span>No</span></label><label class="opt" for="f_afc_tested_2"><input type="radio" id="f_afc_tested_2" name="afc_tested" value="Not sure" ><span>Not sure</span></label></div><p class="hint">Also called an antral follicle count. If you have not had one, that is fine. We can help you arrange it near home.</p><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s6" data-cima-field="afc_right" data-cima-label="How many follicles were counted on your right ovary?"><label for="f_afc_right">How many follicles were counted on your right ovary?</label><input type="number" id="f_afc_right" name="afc_right" placeholder="" inputmode="decimal" ><p class="err" data-cima-err hidden></p></div>
+<div class="field s6" data-cima-field="afc_left" data-cima-label="And on the left ovary?"><label for="f_afc_left">And on the left ovary?</label><input type="number" id="f_afc_left" name="afc_left" placeholder="" inputmode="decimal" ><p class="err" data-cima-err hidden></p></div>
+<div class="field s12" data-cima-field="tubal_status" data-cima-label="Have your fallopian tubes been checked, for example with an HSG? What did it show?"><label for="f_tubal_status">Have your fallopian tubes been checked, for example with an HSG? What did it show?</label><div class="select-wrap"><select id="f_tubal_status" name="tubal_status" ><option value="">Select...</option><option value="Both appear open">Both appear open</option><option value="One is blocked">One is blocked</option><option value="Both are blocked">Both are blocked</option><option value="One or both were removed">One or both were removed</option><option value="Hydrosalpinx was identified">Hydrosalpinx was identified</option><option value="Not tested">Not tested</option><option value="Not sure">Not sure</option></select><svg class="chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p class="err" data-cima-err hidden></p></div>
+<div class="field s12" data-cima-field="lab_report_upload" data-cima-label="If you have AMH, ultrasound or other lab reports, you can upload them here." data-cima-file="lab_report_upload" data-cima-max-mb="25" data-cima-accept="application/pdf,image/jpeg,image/png,image/heic,image/webp" data-cima-file-multiple="1"><label for="f_lab_report_upload">If you have AMH, ultrasound or other lab reports, you can upload them here.</label><input type="file" id="f_lab_report_upload" data-cima-file-input accept="application/pdf,image/jpeg,image/png,image/heic,image/webp" multiple><div data-cima-file-list></div><input type="hidden" name="lab_report_upload" data-cima-file-value><p class="hint" data-cima-file-status hidden></p><p class="err" data-cima-err hidden></p></div></div></section>
+<section class="step" data-cima-step="6" data-cima-step-label="Previous treatment"><h2 class="sec-title">Previous treatment</h2><div class="grid"><fieldset class="field s12" data-cima-field="prior_treatment" data-cima-label="Have you had any fertility treatment before? Pick all that apply."><legend>Have you had any fertility treatment before? Pick all that apply. <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_prior_treatment_0"><input type="checkbox" id="f_prior_treatment_0" name="prior_treatment[]" value="No" required><span>No</span></label><label class="opt" for="f_prior_treatment_1"><input type="checkbox" id="f_prior_treatment_1" name="prior_treatment[]" value="Timed intercourse" ><span>Timed intercourse</span></label><label class="opt" for="f_prior_treatment_2"><input type="checkbox" id="f_prior_treatment_2" name="prior_treatment[]" value="IUI" ><span>IUI</span></label><label class="opt" for="f_prior_treatment_3"><input type="checkbox" id="f_prior_treatment_3" name="prior_treatment[]" value="Conventional IVF" ><span>Conventional IVF</span></label><label class="opt" for="f_prior_treatment_4"><input type="checkbox" id="f_prior_treatment_4" name="prior_treatment[]" value="Minimal-stimulation IVF" ><span>Minimal-stimulation IVF</span></label><label class="opt" for="f_prior_treatment_5"><input type="checkbox" id="f_prior_treatment_5" name="prior_treatment[]" value="Natural-cycle IVF" ><span>Natural-cycle IVF</span></label><label class="opt" for="f_prior_treatment_6"><input type="checkbox" id="f_prior_treatment_6" name="prior_treatment[]" value="IVM" ><span>IVM</span></label><label class="opt" for="f_prior_treatment_7"><input type="checkbox" id="f_prior_treatment_7" name="prior_treatment[]" value="Egg freezing" ><span>Egg freezing</span></label><label class="opt" for="f_prior_treatment_8"><input type="checkbox" id="f_prior_treatment_8" name="prior_treatment[]" value="Other" ><span>Other</span></label></div><p class="hint">Having had IVF before does not rule you out. It simply helps the physician understand your history.</p><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s6" data-cima-field="cycle_eggs_retrieved" data-cima-label="Roughly how many eggs were retrieved in your most recent cycle?"><label for="f_cycle_eggs_retrieved">Roughly how many eggs were retrieved in your most recent cycle?</label><input type="number" id="f_cycle_eggs_retrieved" name="cycle_eggs_retrieved" placeholder="" inputmode="decimal" ><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="prior_treatment_complications" data-cima-label="Did any of these happen during previous treatment?"><legend>Did any of these happen during previous treatment?</legend><div class="opts"><label class="opt" for="f_prior_treatment_complications_0"><input type="checkbox" id="f_prior_treatment_complications_0" name="prior_treatment_complications[]" value="Ovarian hyperstimulation syndrome" ><span>Ovarian hyperstimulation syndrome</span></label><label class="opt" for="f_prior_treatment_complications_1"><input type="checkbox" id="f_prior_treatment_complications_1" name="prior_treatment_complications[]" value="Very high response to fertility medication" ><span>Very high response to fertility medication</span></label><label class="opt" for="f_prior_treatment_complications_2"><input type="checkbox" id="f_prior_treatment_complications_2" name="prior_treatment_complications[]" value="Poor response or few eggs" ><span>Poor response or few eggs</span></label><label class="opt" for="f_prior_treatment_complications_3"><input type="checkbox" id="f_prior_treatment_complications_3" name="prior_treatment_complications[]" value="Low egg maturity" ><span>Low egg maturity</span></label><label class="opt" for="f_prior_treatment_complications_4"><input type="checkbox" id="f_prior_treatment_complications_4" name="prior_treatment_complications[]" value="Fertilization failure" ><span>Fertilization failure</span></label><label class="opt" for="f_prior_treatment_complications_5"><input type="checkbox" id="f_prior_treatment_complications_5" name="prior_treatment_complications[]" value="No blastocyst development" ><span>No blastocyst development</span></label><label class="opt" for="f_prior_treatment_complications_6"><input type="checkbox" id="f_prior_treatment_complications_6" name="prior_treatment_complications[]" value="Significant medication side effects" ><span>Significant medication side effects</span></label><label class="opt" for="f_prior_treatment_complications_7"><input type="checkbox" id="f_prior_treatment_complications_7" name="prior_treatment_complications[]" value="Cycle cancellation" ><span>Cycle cancellation</span></label><label class="opt" for="f_prior_treatment_complications_8"><input type="checkbox" id="f_prior_treatment_complications_8" name="prior_treatment_complications[]" value="None" ><span>None</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s12" data-cima-field="prior_records_upload" data-cima-label="If you have records from previous cycles, you can upload them here." data-cima-file="prior_records_upload" data-cima-max-mb="25" data-cima-accept="application/pdf,image/jpeg,image/png,image/heic,image/webp" data-cima-file-multiple="1"><label for="f_prior_records_upload">If you have records from previous cycles, you can upload them here.</label><input type="file" id="f_prior_records_upload" data-cima-file-input accept="application/pdf,image/jpeg,image/png,image/heic,image/webp" multiple><div data-cima-file-list></div><input type="hidden" name="prior_records_upload" data-cima-file-value><p class="hint" data-cima-file-status hidden></p><p class="err" data-cima-err hidden></p></div></div></section>
+<section class="step" data-cima-step="7" data-cima-step-label="Sperm source"><h2 class="sec-title">Sperm source</h2><div class="grid"><fieldset class="field s12" data-cima-field="sperm_source" data-cima-label="What sperm source do you expect to use?"><legend>What sperm source do you expect to use? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_sperm_source_0"><input type="radio" id="f_sperm_source_0" name="sperm_source" value="Male partner" required><span>Male partner</span></label><label class="opt" for="f_sperm_source_1"><input type="radio" id="f_sperm_source_1" name="sperm_source" value="Known donor" ><span>Known donor</span></label><label class="opt" for="f_sperm_source_2"><input type="radio" id="f_sperm_source_2" name="sperm_source" value="Sperm bank donor" ><span>Sperm bank donor</span></label><label class="opt" for="f_sperm_source_3"><input type="radio" id="f_sperm_source_3" name="sperm_source" value="Previously frozen sperm" ><span>Previously frozen sperm</span></label><label class="opt" for="f_sperm_source_4"><input type="radio" id="f_sperm_source_4" name="sperm_source" value="Surgical sperm retrieval" ><span>Surgical sperm retrieval</span></label><label class="opt" for="f_sperm_source_5"><input type="radio" id="f_sperm_source_5" name="sperm_source" value="Not decided" ><span>Not decided</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s12" data-cima-field="semen_analysis" data-cima-label="Has a semen analysis been done?"><label for="f_semen_analysis">Has a semen analysis been done?</label><div class="select-wrap"><select id="f_semen_analysis" name="semen_analysis" ><option value="">Select...</option><option value="Normal">Normal</option><option value="Low sperm count">Low sperm count</option><option value="Low motility">Low motility</option><option value="Abnormal morphology">Abnormal morphology</option><option value="No sperm in the ejaculate">No sperm in the ejaculate</option><option value="Not completed">Not completed</option><option value="Not sure">Not sure</option></select><svg class="chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p class="err" data-cima-err hidden></p></div></div></section>
+<section class="step" data-cima-step="8" data-cima-step-label="Health history"><h2 class="sec-title">Health history</h2><div class="grid"><fieldset class="field s12" data-cima-field="medical_conditions" data-cima-label="Do you have any of these conditions?"><legend>Do you have any of these conditions? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_medical_conditions_0"><input type="checkbox" id="f_medical_conditions_0" name="medical_conditions[]" value="Diabetes" required><span>Diabetes</span></label><label class="opt" for="f_medical_conditions_1"><input type="checkbox" id="f_medical_conditions_1" name="medical_conditions[]" value="High blood pressure" ><span>High blood pressure</span></label><label class="opt" for="f_medical_conditions_2"><input type="checkbox" id="f_medical_conditions_2" name="medical_conditions[]" value="Heart disease" ><span>Heart disease</span></label><label class="opt" for="f_medical_conditions_3"><input type="checkbox" id="f_medical_conditions_3" name="medical_conditions[]" value="Blood-clotting disorder or previous blood clot" ><span>Blood-clotting disorder or previous blood clot</span></label><label class="opt" for="f_medical_conditions_4"><input type="checkbox" id="f_medical_conditions_4" name="medical_conditions[]" value="Kidney disease" ><span>Kidney disease</span></label><label class="opt" for="f_medical_conditions_5"><input type="checkbox" id="f_medical_conditions_5" name="medical_conditions[]" value="Liver disease" ><span>Liver disease</span></label><label class="opt" for="f_medical_conditions_6"><input type="checkbox" id="f_medical_conditions_6" name="medical_conditions[]" value="Thyroid disorder" ><span>Thyroid disorder</span></label><label class="opt" for="f_medical_conditions_7"><input type="checkbox" id="f_medical_conditions_7" name="medical_conditions[]" value="Seizure disorder" ><span>Seizure disorder</span></label><label class="opt" for="f_medical_conditions_8"><input type="checkbox" id="f_medical_conditions_8" name="medical_conditions[]" value="Autoimmune disease" ><span>Autoimmune disease</span></label><label class="opt" for="f_medical_conditions_9"><input type="checkbox" id="f_medical_conditions_9" name="medical_conditions[]" value="Cancer" ><span>Cancer</span></label><label class="opt" for="f_medical_conditions_10"><input type="checkbox" id="f_medical_conditions_10" name="medical_conditions[]" value="Significant psychiatric condition" ><span>Significant psychiatric condition</span></label><label class="opt" for="f_medical_conditions_11"><input type="checkbox" id="f_medical_conditions_11" name="medical_conditions[]" value="None" ><span>None</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="conditions_controlled" data-cima-label="Are those well controlled with treatment right now?"><legend>Are those well controlled with treatment right now?</legend><div class="opts"><label class="opt" for="f_conditions_controlled_0"><input type="radio" id="f_conditions_controlled_0" name="conditions_controlled" value="Yes, all are well controlled" ><span>Yes, all are well controlled</span></label><label class="opt" for="f_conditions_controlled_1"><input type="radio" id="f_conditions_controlled_1" name="conditions_controlled" value="Some are not well controlled" ><span>Some are not well controlled</span></label><label class="opt" for="f_conditions_controlled_2"><input type="radio" id="f_conditions_controlled_2" name="conditions_controlled" value="No" ><span>No</span></label><label class="opt" for="f_conditions_controlled_3"><input type="radio" id="f_conditions_controlled_3" name="conditions_controlled" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="cancer_active" data-cima-label="Is the cancer currently active or under treatment?"><legend>Is the cancer currently active or under treatment?</legend><div class="opts"><label class="opt" for="f_cancer_active_0"><input type="radio" id="f_cancer_active_0" name="cancer_active" value="Yes, active or currently in treatment" ><span>Yes, active or currently in treatment</span></label><label class="opt" for="f_cancer_active_1"><input type="radio" id="f_cancer_active_1" name="cancer_active" value="No, in remission or completed treatment" ><span>No, in remission or completed treatment</span></label><label class="opt" for="f_cancer_active_2"><input type="radio" id="f_cancer_active_2" name="cancer_active" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="anesthesia_reaction" data-cima-label="Have you ever had a serious reaction to anesthesia or sedation?"><legend>Have you ever had a serious reaction to anesthesia or sedation? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_anesthesia_reaction_0"><input type="radio" id="f_anesthesia_reaction_0" name="anesthesia_reaction" value="No" required><span>No</span></label><label class="opt" for="f_anesthesia_reaction_1"><input type="radio" id="f_anesthesia_reaction_1" name="anesthesia_reaction" value="Yes" ><span>Yes</span></label><label class="opt" for="f_anesthesia_reaction_2"><input type="radio" id="f_anesthesia_reaction_2" name="anesthesia_reaction" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="blood_thinners" data-cima-label="Are you taking any blood thinners?"><legend>Are you taking any blood thinners? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_blood_thinners_0"><input type="radio" id="f_blood_thinners_0" name="blood_thinners" value="No" required><span>No</span></label><label class="opt" for="f_blood_thinners_1"><input type="radio" id="f_blood_thinners_1" name="blood_thinners" value="Yes" ><span>Yes</span></label><label class="opt" for="f_blood_thinners_2"><input type="radio" id="f_blood_thinners_2" name="blood_thinners" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="medication_allergies" data-cima-label="Do you have any medication allergies?"><legend>Do you have any medication allergies? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_medication_allergies_0"><input type="radio" id="f_medication_allergies_0" name="medication_allergies" value="No" required><span>No</span></label><label class="opt" for="f_medication_allergies_1"><input type="radio" id="f_medication_allergies_1" name="medication_allergies" value="Yes" ><span>Yes</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s12" data-cima-field="medication_allergies_detail" data-cima-label="Which medications are you allergic to?"><label for="f_medication_allergies_detail">Which medications are you allergic to?</label><input type="text" id="f_medication_allergies_detail" name="medication_allergies_detail" placeholder="" ><p class="err" data-cima-err hidden></p></div>
+<div class="field s12" data-cima-field="current_medications" data-cima-label="What medications and supplements are you taking currently?"><label for="f_current_medications">What medications and supplements are you taking currently?</label><input type="text" id="f_current_medications" name="current_medications" placeholder="" ><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="substance_use" data-cima-label="Do you currently use any of these?"><legend>Do you currently use any of these? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_substance_use_0"><input type="checkbox" id="f_substance_use_0" name="substance_use[]" value="Cigarettes or nicotine" required><span>Cigarettes or nicotine</span></label><label class="opt" for="f_substance_use_1"><input type="checkbox" id="f_substance_use_1" name="substance_use[]" value="Marijuana" ><span>Marijuana</span></label><label class="opt" for="f_substance_use_2"><input type="checkbox" id="f_substance_use_2" name="substance_use[]" value="Recreational drugs" ><span>Recreational drugs</span></label><label class="opt" for="f_substance_use_3"><input type="checkbox" id="f_substance_use_3" name="substance_use[]" value="More than seven alcoholic drinks per week" ><span>More than seven alcoholic drinks per week</span></label><label class="opt" for="f_substance_use_4"><input type="checkbox" id="f_substance_use_4" name="substance_use[]" value="None" ><span>None</span></label></div><p class="err" data-cima-err hidden></p></fieldset></div></section>
+<section class="step" data-cima-step="9" data-cima-step-label="Anything else"><h2 class="sec-title">Anything else</h2><div class="grid"><fieldset class="field s12" data-cima-field="acute_symptoms" data-cima-label="Are you experiencing any of these right now?"><legend>Are you experiencing any of these right now? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_acute_symptoms_0"><input type="checkbox" id="f_acute_symptoms_0" name="acute_symptoms[]" value="Heavy vaginal bleeding" required><span>Heavy vaginal bleeding</span></label><label class="opt" for="f_acute_symptoms_1"><input type="checkbox" id="f_acute_symptoms_1" name="acute_symptoms[]" value="Severe pelvic pain" ><span>Severe pelvic pain</span></label><label class="opt" for="f_acute_symptoms_2"><input type="checkbox" id="f_acute_symptoms_2" name="acute_symptoms[]" value="Fever with pelvic pain" ><span>Fever with pelvic pain</span></label><label class="opt" for="f_acute_symptoms_3"><input type="checkbox" id="f_acute_symptoms_3" name="acute_symptoms[]" value="A current or recent pelvic infection" ><span>A current or recent pelvic infection</span></label><label class="opt" for="f_acute_symptoms_4"><input type="checkbox" id="f_acute_symptoms_4" name="acute_symptoms[]" value="None of these" ><span>None of these</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<fieldset class="field s12" data-cima-field="treatment_urgency" data-cima-label="Is there a deadline by which your treatment needs to start?"><legend>Is there a deadline by which your treatment needs to start? <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_treatment_urgency_0"><input type="radio" id="f_treatment_urgency_0" name="treatment_urgency" value="No specific deadline" required><span>No specific deadline</span></label><label class="opt" for="f_treatment_urgency_1"><input type="radio" id="f_treatment_urgency_1" name="treatment_urgency" value="Within the next few weeks" ><span>Within the next few weeks</span></label><label class="opt" for="f_treatment_urgency_2"><input type="radio" id="f_treatment_urgency_2" name="treatment_urgency" value="Within the next few months" ><span>Within the next few months</span></label><label class="opt" for="f_treatment_urgency_3"><input type="radio" id="f_treatment_urgency_3" name="treatment_urgency" value="Not sure" ><span>Not sure</span></label></div><p class="err" data-cima-err hidden></p></fieldset>
+<div class="field s12" data-cima-field="additional_notes" data-cima-label="Anything else you would like the clinical team to know?"><label for="f_additional_notes">Anything else you would like the clinical team to know?</label><input type="text" id="f_additional_notes" name="additional_notes" placeholder="" ><p class="err" data-cima-err hidden></p></div>
+<fieldset class="field s12" data-cima-field="acknowledgement" data-cima-label="I understand this questionnaire helps the Meiova team prepare for my consultation. It does not confirm that IVM is right for me. A physician makes that decision with me."><legend>I understand this questionnaire helps the Meiova team prepare for my consultation. It does not confirm that IVM is right for me. A physician makes that decision with me. <span class="req" aria-hidden="true">*</span></legend><div class="opts"><label class="opt" for="f_acknowledgement_0"><input type="radio" id="f_acknowledgement_0" name="acknowledgement" value="I agree" required><span>I agree</span></label></div><p class="hint">This form is not monitored for urgent medical concerns. If you have a medical emergency, call 911 or go to the nearest emergency department.</p><p class="err" data-cima-err hidden></p></fieldset></div></section>
+        <!--cima-consent-v2--><div class="cima-consent" data-cima-consent-block="1" style="margin:16px 0;text-align:left;"><label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:12.5px;line-height:1.5;font-weight:400;opacity:.85;"><input type="checkbox" name="sms_consent" value="yes" data-cima-consent="1" required style="flex:0 0 auto;width:16px;height:16px;margin:2px 0 0 0;cursor:pointer;"><span>By checking this box, you agree to receive text messages from Meiova at the phone number provided, including messages about your inquiry, scheduling, and appointment reminders. Consent is not a condition of purchase or of receiving care. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help. See our <a href="https://www.newhopefertility.com/terms-privacy/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Privacy Policy</a>.</span></label><div data-cima-consent-error style="display:none;color:#b91c1c;font-size:12.5px;margin-top:8px;font-weight:600;">Please agree to receive text messages to continue.</div><input type="hidden" name="_consent_text" value="By checking this box, you agree to receive text messages from Meiova at the phone number provided, including messages about your inquiry, scheduling, and appointment reminders. Consent is not a condition of purchase or of receiving care. Message frequency varies. Message and data rates may apply. Reply STOP to opt out or HELP for help."><input type="hidden" name="_consent_version" value="cima-consent-v2"></div><button type="submit" id="submit-btn" class="btn btn-primary">Send my answers to the Meiova team</button>
+      </form>
+      <div class="nav" id="cima-nav" hidden></div>
+      <p class="assure">Your answers go only to the New Hope Fertility Center clinical team. Most people finish in about 10 minutes.</p>
+    </div>
+    <div id="success-wrap" style="display:none">
+      <div class="success">
+        <div class="check" id="success-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <div class="spin" id="success-spinner" style="display:none"></div>
+        <h2 id="success-title">Thank you</h2>
+        <p id="success-text">Thank you. Your answers are with the New Hope Fertility Center clinical team. Completing this questionnaire does not confirm that IVM is right for you. A physician reviews your answers and makes that decision with you.</p>
+        <p id="success-provisional" class="hint" hidden>This is based on what you told us so far and may change once we have everything.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--cima-legal-footer-v1--><style data-cima-legal-footer-css>body:has(> footer[data-cima-legal-footer]){flex-direction:column;flex-wrap:nowrap}</style><footer data-cima-legal-footer="1" lang="en" style="display:block;box-sizing:border-box;position:static;float:none;clear:both;flex:0 0 auto;align-self:stretch;justify-self:stretch;grid-column:1/-1;order:2147483647;width:auto;max-width:none;min-width:0;margin:0;padding:26px 20px;background:#F3F1EC;border-top:1px solid rgba(0,0,0,.08);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:12.5px;line-height:1.7;color:#4A5568;text-align:center;"><div style="max-width:900px;margin:0 auto;"><div><a href="https://www.newhopefertility.com/terms-privacy/" style="color:inherit;text-decoration:underline;">Privacy Policy</a></div><div style="margin-top:9px;opacity:.75;">&copy; 2026 Meiova. This content is for informational purposes only and does not constitute medical advice.</div></div></footer><!--cima-visible-if-v1--><!--cima-lead-bridge-v1 v136--><script>
+(function(){
+  var FORM_ID = "a8fd0b61-3642-40ff-931e-6bd9ea9970eb";
+  var FORM_LANG_VERSION = "";
+  var SUBMIT_URL = "https://momssbzlofjodqodvvvk.supabase.co/functions/v1/form-submit";
+  var SUBMIT_TEXT = "Send my answers to the Meiova team";
+  var REDIRECT_URL = "";
+  var REDIRECT_MSG = "Got it. Taking you to the next step now.";
+  var T = {"back":"Back","next":"Continue","stepOf":"Step \u003cb>{n}\u003c/b> of \u003cb>{t}\u003c/b>","required":"{label} is required.","thisField":"This","email":"Enter an email address in the form name@example.com.","unit":"Please choose a unit for {label}.","tableMin":"{label} needs at least one entry.","checkThese":"Check these before you continue: ","andMore":" and {n} more.","endDot":".","oneMoment":"One moment","submitting":"Submitting...","sendFailed":"That did not send. Please try again.","connDropped":"The connection dropped before that could send. Please try again.","removeRow":"Remove this row"};
+  function tf(s, v){ return String(s).replace(/\{(\w+)\}/g, function(m, k){ return (k in v) ? String(v[k]) : m; }); }
+  var REDIRECT_HDR = "X-Cima-Redirect";
+  var LAYOUT = "steps";
+  var STEP_LABELS = ["About you","Your goals","Travel and treatment plan","Pregnancy history","Periods and ovaries","Tests you have had","Previous treatment","Sperm source","Health history","Anything else"];
+
+  var form = document.getElementById('cima-form');
+  var btn = document.getElementById('submit-btn');
+  var errBanner = document.getElementById('error-banner');
+  var nav = document.getElementById('cima-nav');
+  var meterEl = document.getElementById('cima-meter');
+  var segs = document.getElementById('cima-segs');
+  var meterLbl = document.getElementById('cima-meter-lbl');
+  var steps = Array.prototype.slice.call(form.querySelectorAll('[data-cima-step]'));
+  // v101: plural. There can now be two consent blocks (A2P and data
+  // processing) and hiding only the first would leave the other visible on
+  // every step.
+  var consentBlocks = [], backBtn = null, nextBtn = null;
+  var cur = 0, stepped = false;
+  var EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
+
+  // v100: table cells are named field[i][col]. Anything matching is handled by
+  // the table code paths and must be skipped by the scalar collector and by
+  // per-input validation.
+  var TBL_RE = /^([^\[]+)\[(\d+)\]\[([^\]]+)\]$/;
+
+  function getQuery(k){ try { return new URLSearchParams(location.search).get(k) || ''; } catch(e){ return ''; } }
+  function cssEsc(n){ return String(n).replace(/(["\\])/g, '\\$1'); }
+  function wrapOf(el){ return el && el.closest ? el.closest('[data-cima-field]') : null; }
+
+  // v80B/v97: a field hidden by visible_if must never be validated. STEP
+  // visibility is deliberately ignored: a required answer on a step the patient
+  // has not reached is still missing, and offsetParent cannot tell the two
+  // apart, so reading the wrapper the visibility engine actually writes to is
+  // the only reliable signal.
+  function isActive(el){ var w = wrapOf(el); return !(w && w.style.display === 'none'); }
+
+  function setErr(w, msg){
+    if(!w) return;
+    w.classList.add('has-error');
+    var slot = w.querySelector('[data-cima-err]');
+    if(slot){ slot.textContent = msg; slot.hidden = false; }
+  }
+  function clearAll(){
+    var ws = form.querySelectorAll('[data-cima-field]');
+    for(var i=0;i<ws.length;i++){
+      ws[i].classList.remove('has-error');
+      var slot = ws[i].querySelector('[data-cima-err]');
+      if(slot){ slot.textContent=''; slot.hidden = true; }
+    }
+    var inv = form.querySelectorAll('[aria-invalid]');
+    for(var j=0;j<inv.length;j++) inv[j].removeAttribute('aria-invalid');
+    errBanner.classList.remove('show');
+    errBanner.textContent = '';
+  }
+
+  function validate(scope){
+    var problems = [], seen = {};
+    var els = (scope || form).querySelectorAll('input,select,textarea');
+    for(var i=0;i<els.length;i++){
+      var f = els[i];
+      if(!f.name || f.type === 'hidden') continue;
+      // v100: a table cell is never individually required. The grid is checked
+      // as a whole below, otherwise every blank row would raise an error.
+      if(TBL_RE.test(f.name)) continue;
+      var w = wrapOf(f);
+      if(!w) continue;
+      if(!isActive(f)) continue;
+      var key = f.name.replace('[]','');
+      var label = w.getAttribute('data-cima-label') || key;
+      if(f.required){
+        var ok;
+        if(f.type === 'checkbox' || f.type === 'radio'){
+          if(seen[key]) continue;
+          seen[key] = 1;
+          var group = form.querySelectorAll('[name="' + cssEsc(f.name) + '"]');
+          ok = false;
+          for(var g=0;g<group.length;g++){ if(group[g].checked) ok = true; }
+        } else {
+          ok = !!String(f.value || '').trim();
+        }
+        if(!ok){ problems.push({ el:f, wrap:w, msg: tf(T.required, { label: label }) }); continue; }
+      }
+      if(f.name === 'date_of_birth' && String(f.value||'').trim()){
+        var dateText=String(f.value).trim(),dateParts=/^(\d{4})-(\d{2})-(\d{2})$/.exec(dateText);
+        var dateValue=dateParts?new Date(Number(dateParts[1]),Number(dateParts[2])-1,Number(dateParts[3])):null;
+        var validDate=dateParts&&Number(dateParts[1])>=1900&&dateValue.getFullYear()===Number(dateParts[1])&&dateValue.getMonth()===Number(dateParts[2])-1&&dateValue.getDate()===Number(dateParts[3])&&dateValue<=new Date();
+        if(!validDate)problems.push({el:f,wrap:w,msg:'Enter a valid date of birth in YYYY-MM-DD format.'});
+      }
+      if(f.type === 'email' && String(f.value||'').trim() && !EMAIL_RE.test(String(f.value).trim())){
+        problems.push({ el:f, wrap:w, msg:T.email });
+      }
+    }
+
+    // v108: a measurement control's answer is composed, and it lives in a
+    // hidden input that this loop skips. So the required check is on the
+    // wrapper, exactly as the required-grid check below is, and for the same
+    // reason: no single visible box holds the answer.
+    var root0 = scope || form;
+    var ms = root0.querySelectorAll ? root0.querySelectorAll('[data-cima-measure]') : [];
+    for(var mi=0; mi<ms.length; mi++){
+      var mw = ms[mi];
+      if(mw.style.display === 'none') continue;
+      var mhid = mw.querySelector('[data-cima-value]');
+      var mval = mhid ? String(mhid.value || '').trim() : '';
+      var msel = mw.querySelector('[data-cima-unit]');
+      var munit = msel ? String(msel.value || '').trim() : '';
+      var mlabel = mw.getAttribute('data-cima-label') || T.thisField;
+      var mfirst = mw.querySelector('[data-cima-ft],[data-cima-u]');
+      if(!mfirst) continue;
+      if(mw.hasAttribute('data-cima-measure-required') && !mval){
+        problems.push({ el:mfirst, wrap:mw, msg: tf(T.required, { label: mlabel }) });
+        continue;
+      }
+      // Where a field offers units the unit is part of the answer, not
+      // decoration: the ruleset defaults a missing height unit to inches and a
+      // missing weight unit to pounds, which is how "5.7" was read as 5.7
+      // inches. A number with no unit is an incomplete answer.
+      if(mval && !munit){
+        problems.push({ el:mfirst, wrap:mw, msg: tf(T.unit, { label: mlabel }) });
+      }
+    }
+
+    // v109: a required file field's answer lives in a hidden input, which the
+    // loop above skips by design, so the check is on the wrapper. An empty
+    // string is a failure, not a pass: that is exactly what the one form with
+    // file fields has been submitting on every row.
+    var fw = root0.querySelectorAll ? root0.querySelectorAll('[data-cima-file-required]') : [];
+    for(var fi=0; fi<fw.length; fi++){
+      var fwrap = fw[fi];
+      if(fwrap.style.display === 'none') continue;
+      var fhid = fwrap.querySelector('[data-cima-file-value]');
+      if(fhid && String(fhid.value || '').trim()) continue;
+      var finput = fwrap.querySelector('[data-cima-file-input]');
+      if(!finput) continue;
+      problems.push({ el:finput, wrap:fwrap,
+        msg: tf(T.required, { label: fwrap.getAttribute('data-cima-label') || T.thisField }) });
+    }
+
+    // v100: a required grid needs at least one row carrying something. The flag
+    // lives on the wrapper because marking a cell required would demand a value
+    // in every row of every column.
+    var root = scope || form;
+    var tbls = root.querySelectorAll ? root.querySelectorAll('[data-cima-table-required]') : [];
+    for(var t=0;t<tbls.length;t++){
+      var tw = tbls[t];
+      if(tw.style.display === 'none') continue;
+      var cells = tw.querySelectorAll('input,select,textarea');
+      var any = false;
+      for(var c=0;c<cells.length;c++){ if(String(cells[c].value || '').trim()){ any = true; break; } }
+      if(!any){
+        var first = cells.length ? cells[0] : null;
+        if(first){
+          problems.push({ el:first, wrap:tw, msg: tf(T.tableMin, { label: tw.getAttribute('data-cima-label') || T.thisField }) });
+        }
+      }
+    }
+
+    return problems;
+  }
+
+  function showProblems(problems){
+    var names = [];
+    for(var i=0;i<problems.length;i++){
+      setErr(problems[i].wrap, problems[i].msg);
+      problems[i].el.setAttribute('aria-invalid','true');
+      if(i < 3){ names.push(problems[i].wrap.getAttribute('data-cima-label') || ''); }
+    }
+    var extra = problems.length - names.length;
+    errBanner.textContent = T.checkThese + names.join(', ')
+      + (extra > 0 ? tf(T.andMore, { n: extra }) : T.endDot);
+    errBanner.classList.add('show');
+  }
+
+  function focusFirst(problems){
+    try{
+      problems[0].el.focus({ preventScroll:true });
+      problems[0].wrap.scrollIntoView({ block:'center', behavior:'smooth' });
+    }catch(e){ try{ problems[0].el.focus(); }catch(_){} }
+  }
+
+  function paintMeter(){
+    if(segs){
+      var kids = segs.children;
+      for(var i=0;i<kids.length;i++){
+        kids[i].setAttribute('data-state', i < cur ? 'done' : (i === cur ? 'now' : 'todo'));
+      }
+    }
+    if(meterLbl){
+      meterLbl.innerHTML = tf(T.stepOf, { n: cur+1, t: steps.length });
+    }
+  }
+
+  function showStep(i){
+    cur = Math.max(0, Math.min(steps.length - 1, i));
+    for(var k=0;k<steps.length;k++){
+      var on = (k === cur);
+      steps[k].hidden = !on;
+      if(on){
+        steps[k].classList.add('enter');
+        (function(el){ setTimeout(function(){ el.classList.remove('enter'); }, 340); })(steps[k]);
+      }
+    }
+    var last = (cur === steps.length - 1);
+    if(nextBtn) nextBtn.hidden = last;
+    if(backBtn) backBtn.hidden = (cur === 0);
+    btn.hidden = !last;
+    for(var ci=0;ci<consentBlocks.length;ci++){ consentBlocks[ci].style.display = last ? '' : 'none'; }
+    paintMeter();
+    try{ window.scrollTo({ top:0, behavior:'smooth' }); }catch(e){ window.scrollTo(0,0); }
+  }
+
+  function goNext(){
+    clearAll();
+    var problems = validate(steps[cur]);
+    if(problems.length){ showProblems(problems); focusFirst(problems); return; }
+    showStep(cur + 1);
+  }
+
+  function mkBtn(cls, txt){
+    var e = document.createElement('button');
+    e.type = 'button'; e.className = cls; e.textContent = txt;
+    return e;
+  }
+
+  function initSteps(){
+    if(LAYOUT !== 'steps' || steps.length < 2) return;
+    consentBlocks = form.querySelectorAll('[data-cima-consent-block]');
+    // The submit control moves OUT of <form> on purpose. The A2P consent gate
+    // installs a capture-phase click listener that blocks every button inside a
+    // form whose consent box is unchecked, which would make Continue dead on
+    // step one. Buttons with no owning form are skipped by that gate, and the
+    // form attribute keeps submit associated so the gate still guards it.
+    btn.setAttribute('form','cima-form');
+    backBtn = mkBtn('btn btn-ghost',T.back);
+    nextBtn = mkBtn('btn btn-primary',T.next);
+    var spacer = document.createElement('span');
+    spacer.className = 'spacer';
+    nav.appendChild(backBtn); nav.appendChild(spacer);
+    nav.appendChild(nextBtn); nav.appendChild(btn);
+    nav.hidden = false;
+    if(meterEl) meterEl.hidden = false;
+    backBtn.addEventListener('click', function(){ clearAll(); showStep(cur - 1); });
+    nextBtn.addEventListener('click', goNext);
+    if(segs){
+      segs.addEventListener('click', function(ev){
+        var t = ev.target && ev.target.closest ? ev.target.closest('.seg') : null;
+        if(!t) return;
+        var i = parseInt(t.getAttribute('data-i'), 10);
+        if(isFinite(i) && i < cur){ clearAll(); showStep(i); }
+      });
+    }
+    stepped = true;
+    // v117: lets the save and return script (form-draft) reopen a resumed
+    // draft on its saved step and record the current step when saving.
+    window.cimaFormApi = { go: function(i){ clearAll(); showStep(i); }, cur: function(){ return cur; }, count: steps.length };
+    showStep(0);
+  }
+
+  // v100: add / remove rows on a table field. The row index continues from the
+  // highest already present, so an index is never reused after a delete.
+  // Reusing one would merge two rows into a single object in collect().
+  function initTables(){
+    var tbls = form.querySelectorAll('[data-cima-table]');
+    for(var i=0;i<tbls.length;i++){
+      (function(wrap){
+        var key = wrap.getAttribute('data-cima-table');
+        var max = parseInt(wrap.getAttribute('data-cima-max'), 10) || 20;
+        var cols = [];
+        try { cols = JSON.parse(wrap.getAttribute('data-cima-cols') || '[]'); } catch(e){ cols = []; }
+        var tbody = wrap.querySelector('[data-cima-tbody]');
+        var addBtn = wrap.querySelector('[data-cima-addrow]');
+        if(!tbody || !addBtn || !cols.length) return;
+        var next = tbody.querySelectorAll('tr').length;
+
+        function att(s){
+          return String(s == null ? '' : s)
+            .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+            .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+        }
+
+        function cell(ri, col){
+          var nm = att(key) + '[' + ri + '][' + att(col.key) + ']';
+          var ph = att(col.placeholder || '');
+          if(col.type === 'select'){
+            var o = '<option value=""></option>';
+            var list = col.options || [];
+            for(var k=0;k<list.length;k++){
+              var opt = list[k];
+              var val = (opt && typeof opt === 'object') ? (opt.value != null ? opt.value : opt.label) : opt;
+              var lab = (opt && typeof opt === 'object') ? (opt.label != null ? opt.label : opt.value) : opt;
+              o += '<option value="' + att(val) + '">' + att(lab) + '</option>';
+            }
+            return '<td><select name="' + nm + '">' + o + '</select></td>';
+          }
+          if(col.type === 'textarea'){
+            return '<td><textarea name="' + nm + '" rows="2" placeholder="' + ph + '"></textarea></td>';
+          }
+          var t = ['text','number','date','tel','email'].indexOf(col.type) >= 0 ? col.type : 'text';
+          return '<td><input type="' + t + '" name="' + nm + '" placeholder="' + ph + '"></td>';
+        }
+
+        function sync(){
+          var n = tbody.querySelectorAll('tr').length;
+          addBtn.disabled = n >= max;
+          var dels = tbody.querySelectorAll('.del');
+          for(var d=0;d<dels.length;d++) dels[d].hidden = (n <= 1);
+        }
+
+        addBtn.addEventListener('click', function(){
+          if(tbody.querySelectorAll('tr').length >= max) return;
+          var tr = document.createElement('tr');
+          var html = '';
+          for(var c=0;c<cols.length;c++) html += cell(next, cols[c]);
+          html += '<td class="rowdel"><button type="button" class="del" aria-label="' + T.removeRow + '">&times;</button></td>';
+          tr.innerHTML = html;
+          tr.setAttribute('data-cima-row', String(next));
+          tbody.appendChild(tr);
+          next++;
+          sync();
+          var first = tr.querySelector('input,select,textarea');
+          if(first){ try{ first.focus(); }catch(e){} }
+        });
+
+        tbody.addEventListener('click', function(ev){
+          var b = ev.target && ev.target.closest ? ev.target.closest('.del') : null;
+          if(!b) return;
+          if(tbody.querySelectorAll('tr').length <= 1) return;
+          var tr = b.closest('tr');
+          if(tr) tr.parentNode.removeChild(tr);
+          sync();
+        });
+
+        sync();
+      })(tbls[i]);
+    }
+  }
+
+  function collect(){
+    var data = {};
+    var tables = {};
+    var fields = form.querySelectorAll('input, select, textarea');
+    for(var i=0;i<fields.length;i++){
+      var f = fields[i];
+      if(!f.name) continue;
+
+      var m = TBL_RE.exec(f.name);
+      if(m){
+        var tk = m[1], ri = parseInt(m[2], 10), ck = m[3];
+        tables[tk] = tables[tk] || {};
+        tables[tk][ri] = tables[tk][ri] || {};
+        tables[tk][ri][ck] = f.value || '';
+        continue;
+      }
+
+      var key = f.name.replace('[]','');
+      // v108: the suffixed boxes of a measurement control are input, not
+      // answer. The answer is the hidden input named after the field, which
+      // this loop picks up like any other.
+      if(f.hasAttribute && (f.hasAttribute('data-cima-ft') || f.hasAttribute('data-cima-in') || f.hasAttribute('data-cima-u'))) continue;
+      // v108: a field hidden by a condition contributes NOTHING, not even an
+      // empty key. Someone who answers one branch, goes back and switches the
+      // question above it must not send the abandoned branch's answers: the
+      // screening ruleset scores on these, so a stale answer from a path the
+      // patient rejected is worse than a missing one.
+      //
+      // A consent box is the deliberate exception and keeps its existing
+      // behaviour: it always submits, because consent_declined_channels() only
+      // reports a decline on an exact string match and an absent key would
+      // leave someone who refused texts textable.
+      if(!isActive(f) && !(f.hasAttribute && f.hasAttribute('data-cima-consent-value'))) continue;
+      if(f.type === 'checkbox'){
+        if(f.hasAttribute && f.hasAttribute('data-cima-consent-value')){
+          // v105: a consent box always submits a value. Unticked must travel as
+          // an explicit refusal, not as an absent key, or the opt-out trigger
+          // never sees it and a patient who declined keeps getting texts.
+          data[key] = f.checked
+            ? (f.getAttribute('data-granted') || 'granted')
+            : (f.getAttribute('data-declined') || 'declined');
+        } else if(f.name.slice(-2) === '[]'){
+          data[key] = data[key] || [];
+          if(f.checked) data[key].push(f.value);
+        } else {
+          data[key] = f.checked ? 'yes' : '';
+        }
+      } else if(f.type === 'radio'){
+        if(f.checked) data[key] = f.value;
+      } else {
+        data[key] = f.value || '';
+      }
+    }
+
+    // Rows the patient left completely blank are dropped. A grid rendered with
+    // two empty rows must not submit two empty objects, or the clinic reads
+    // "2 medications" where the patient said none.
+    for(var tk2 in tables){
+      if(!Object.prototype.hasOwnProperty.call(tables, tk2)) continue;
+      var rows = tables[tk2];
+      var idxs = Object.keys(rows).sort(function(a,b){ return a - b; });
+      var out = [];
+      for(var r=0;r<idxs.length;r++){
+        var row = rows[idxs[r]], anyVal = false;
+        for(var c in row){
+          if(Object.prototype.hasOwnProperty.call(row, c) && String(row[c]).trim()){ anyVal = true; break; }
+        }
+        if(anyVal) out.push(row);
+      }
+      data[tk2] = out;
+    }
+
+    return data;
+  }
+
+  // v87: when a destination is configured the lead is going somewhere else, so
+  // showing "Thank you, we'll be in touch" first is a promise the next screen
+  // contradicts. Swap the panel to a redirecting state and go immediately.
+  function showRedirecting(){
+    document.getElementById('form-wrap').style.display = 'none';
+    document.getElementById('success-icon').style.display = 'none';
+    document.getElementById('success-spinner').style.display = 'block';
+    document.getElementById('success-title').textContent = T.oneMoment;
+    document.getElementById('success-text').textContent = REDIRECT_MSG;
+    document.getElementById('success-wrap').style.display = 'block';
+  }
+
+  form.addEventListener('submit', async function(e){
+    e.preventDefault();
+    clearAll();
+
+    var problems = validate(form);
+    if(problems.length){
+      showProblems(problems);
+      if(stepped){
+        var owner = problems[0].el.closest ? problems[0].el.closest('[data-cima-step]') : null;
+        var idx = owner ? steps.indexOf(owner) : -1;
+        if(idx >= 0 && idx !== cur) showStep(idx);
+      }
+      focusFirst(problems);
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = T.submitting;
+    var data = collect();
+    if (FORM_LANG_VERSION) data._lang = FORM_LANG_VERSION;
+
+    try {
+      var res = await fetch(SUBMIT_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form_id: FORM_ID,
+          data: data,
+          event_id: data._event_id || '',
+          source_url: window.location.href,
+          utm_source: getQuery('utm_source'),
+          utm_medium: getQuery('utm_medium'),
+          utm_campaign: getQuery('utm_campaign'),
+          utm_content: getQuery('utm_content')
+        })
+      });
+      // v88: the responder may hand back a destination carrying a prefill token.
+      var hdrTarget = '';
+      try { hdrTarget = res.headers.get(REDIRECT_HDR) || ''; } catch (e) { hdrTarget = ''; }
+      var result = await res.json();
+      if (res.ok && result.success){
+        var redirectTarget = (/^https?:\/\//i.test(hdrTarget) ? hdrTarget : '') || result.redirect_url || REDIRECT_URL;
+        if (redirectTarget){
+          showRedirecting();
+          setTimeout(function(){ window.location.href = redirectTarget; }, 40);
+        } else {
+          // v110: the clinic's wording for THIS result, when they turned it on
+          // for it. form-submit decides and simply does not send a message that
+          // must not be shown, so the absence of screening_outcome is the whole
+          // instruction here: an unscored session, a form with no linked agent,
+          // a scoring failure and a clinic who left the toggle off all arrive
+          // as null and all keep the form's own success message.
+          //
+          // textContent, never innerHTML. This is clinic-authored copy rendered
+          // on a patient-facing page and it is not a template.
+          // v128: form-submit hands back the thank-you text with merge tags filled.
+          if (typeof result.thank_you_message === 'string' && result.thank_you_message) {
+            document.getElementById('success-text').textContent = result.thank_you_message;
+          }
+          var so = result.screening_outcome;
+          if (so && typeof so.patient_message === 'string' && so.patient_message) {
+            document.getElementById('success-text').textContent = so.patient_message;
+            // A provisional result that flips later is how a clinic gets
+            // embarrassed, so it says so rather than reading as settled.
+            if (so.outcome_is_provisional === true) {
+              var pv = document.getElementById('success-provisional');
+              if (pv) pv.hidden = false;
+            }
+          }
+          document.getElementById('form-wrap').style.display = 'none';
+          document.getElementById('success-wrap').style.display = 'block';
+        }
+      } else {
+        errBanner.textContent = result.error || T.sendFailed;
+        errBanner.classList.add('show');
+        btn.disabled = false;
+        btn.textContent = SUBMIT_TEXT;
+      }
+    } catch (err) {
+      errBanner.textContent = T.connDropped;
+      errBanner.classList.add('show');
+      btn.disabled = false;
+      btn.textContent = SUBMIT_TEXT;
+    }
+  });
+
+  function initAll(){ initSteps(); initTables(); }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initAll);
+  } else {
+    initAll();
+  }
+})();
+</script><script>(function(){if(window.__cimaVisibleIf)return;window.__cimaVisibleIf=1;var R=[{"name":"repeat_trip_ok","visible_if":{"op":"in","field":"ny_travel","value":["Yes","Yes, with some planning","I live in or near New York","Not sure"]}},{"name":"transfer_location_pref","visible_if":{"not":{"op":"=","field":"freeze_all_ok","value":"No, I want a fresh transfer"}}},{"name":"miscarriages","visible_if":{"op":"=","field":"ever_pregnant","value":"Yes"}},{"name":"living_children","visible_if":{"op":"=","field":"ever_pregnant","value":"Yes"}},{"name":"ovarian_surgery_detail","visible_if":{"op":"=","field":"ovarian_surgery","value":"Yes"}},{"name":"amh_value","visible_if":{"op":"=","field":"amh_tested","value":"Yes"}},{"name":"afc_right","visible_if":{"op":"=","field":"afc_tested","value":"Yes"}},{"name":"afc_left","visible_if":{"op":"=","field":"afc_tested","value":"Yes"}},{"name":"lab_report_upload","visible_if":{"any":[{"op":"=","field":"amh_tested","value":"Yes"},{"op":"=","field":"afc_tested","value":"Yes"}]}},{"name":"cycle_eggs_retrieved","visible_if":{"op":"array_overlap","field":"prior_treatment","value":["Conventional IVF","Minimal-stimulation IVF","Natural-cycle IVF","IVM","Egg freezing"]}},{"name":"prior_treatment_complications","visible_if":{"op":"array_overlap","field":"prior_treatment","value":["Conventional IVF","Minimal-stimulation IVF","Natural-cycle IVF","IVM","Egg freezing"]}},{"name":"prior_records_upload","visible_if":{"op":"array_overlap","field":"prior_treatment","value":["Conventional IVF","Minimal-stimulation IVF","Natural-cycle IVF","IVM","Egg freezing"]}},{"name":"sperm_source","visible_if":{"op":"array_overlap","field":"assistance_needed","value":["Partner sperm","Donor sperm","Not sure"]}},{"name":"semen_analysis","visible_if":{"all":[{"op":"not_in","field":"sperm_source","value":["Sperm bank donor","Not decided"]}]}},{"name":"conditions_controlled","visible_if":{"not":{"op":"array_overlap","field":"medical_conditions","value":["None"]}}},{"name":"cancer_active","visible_if":{"op":"array_overlap","field":"medical_conditions","value":["Cancer"]}},{"name":"medication_allergies_detail","visible_if":{"op":"=","field":"medication_allergies","value":"Yes"}}];var TX={"upNone":"Uploads are not available on this form.","upBig":"That file is larger than {mb} MB. Please choose a smaller one.","upType":"That file type is not accepted here.","uploading":"Uploading {name}...","upTooLarge":"That file is too large.","upFailed":"That upload did not go through. Please try again.","remove":"Remove","soft":"That is an unusual {what}. Does that look right?","ft":"height in feet","inp":"inches","cm":"height in centimetres","lb":"weight in pounds","kg":"weight in kilograms"};function tx(s,k,v){return String(s).replace("{"+k+"}",function(){return String(v)})}var UP={"formId":"a8fd0b61-3642-40ff-931e-6bd9ea9970eb","fnBase":"https://momssbzlofjodqodvvvk.supabase.co/functions/v1"};var WARNED={};function warn(m){if(WARNED[m])return;WARNED[m]=1;try{console.warn("[cima-forms] "+m)}catch(e){}}function esc(n){return String(n).replace(/(["\\])/g,"\\$1")}function els(f,n){return f.querySelectorAll('[name="'+esc(n)+'"],[name="'+esc(n)+'[]"]')}var NONE={arr:null,txt:null,num:null,bool:null};function read(f,n){var e=els(f,n);if(!e.length)return NONE;var cb=0,multi=false,radio=false,other=null;for(var i=0;i<e.length;i++){var x=e[i];if(x.type==="checkbox"){cb++;if(String(x.name).slice(-2)==="[]")multi=true}else if(x.type==="radio"){radio=true}else{other=x}}if(multi||cb>1){var a=[];for(var j=0;j<e.length;j++){if(e[j].checked)a.push(e[j].value)}if(!a.length)return NONE;return{arr:a,txt:a.join(", "),num:null,bool:null}}if(cb===1){var b=!!e[0].checked;return{arr:null,txt:String(b),num:null,bool:b}}var v=null;if(radio){for(var k=0;k<e.length;k++){if(e[k].checked){v=e[k].value;break}}}else{v=other?other.value:e[0].value}if(v==null||String(v).replace(/^\s+|\s+$/g,"")==="")return NONE;var t=String(v),nn=Number(t);return{arr:null,txt:t,num:isFinite(nn)&&t.replace(/^\s+|\s+$/g,"")!==""?nn:null,bool:null}}function isArr(x){return Object.prototype.toString.call(x)==="[object Array]"}function vlist(v){if(!isArr(v))return[];var o=[];for(var i=0;i<v.length;i++)o.push(String(v[i]==null?"":v[i]));return o}function vscalar(v){if(v==null)return null;if(typeof v==="object")return null;return String(v)}function has(c,k){return Object.prototype.hasOwnProperty.call(c,k)}function leaf(a,op,value){var L=vlist(value),S=vscalar(value);var thr=(typeof value==="number"&&isFinite(value))?value:null;switch(op){case "present":return a.num!==null||a.txt!==null||a.bool!==null||(a.arr!==null&&a.arr.length>0);case "absent":return a.num===null&&a.txt===null&&a.bool===null&&(a.arr===null||a.arr.length===0);case "=":if(a.num!==null&&thr!==null)return a.num===thr;return a.txt!==null&&a.txt===S;case "!=":return a.txt!==S;case ">=":return a.num!==null&&thr!==null&&a.num>=thr;case ">":return a.num!==null&&thr!==null&&a.num>thr;case "<=":return a.num!==null&&thr!==null&&a.num<=thr;case "<":return a.num!==null&&thr!==null&&a.num<thr;case "is_true":return a.bool===true;case "is_false":return a.bool===false;case "in":return a.txt!==null&&L.indexOf(a.txt)>=0;case "not_in":return a.txt===null||L.indexOf(a.txt)<0;case "array_overlap":if(a.arr===null)return false;for(var i=0;i<L.length;i++){if(a.arr.indexOf(L[i])>=0)return true}return false;case "array_excludes":if(a.arr===null)return true;for(var j=0;j<L.length;j++){if(a.arr.indexOf(L[j])>=0)return false}return true;default:warn("unsupported operator "+op+", treating as not visible");return false}}function test(f,c,d){if(c==null)return true;if(typeof c!=="object"||isArr(c)){warn("condition is not an object");return false}if(d>32){warn("condition nested too deeply");return false}var n=0;for(var kk in c){if(has(c,kk))n++}if(!n)return false;if(has(c,"all")){if(!isArr(c.all)){warn("all is not an array");return false}for(var a1=0;a1<c.all.length;a1++){if(!test(f,c.all[a1],d+1))return false}return true}if(has(c,"any")){if(!isArr(c.any)){warn("any is not an array");return false}for(var a2=0;a2<c.any.length;a2++){if(test(f,c.any[a2],d+1))return true}return false}if(has(c,"at_least")){var need=Math.max(parseInt(c.at_least,10)||1,1);var of=isArr(c.of)?c.of:[];if(need>of.length){warn("at_least asks for more clauses than it has");return false}var hits=0;for(var a3=0;a3<of.length;a3++){if(test(f,of[a3],d+1)){hits++;if(hits>=need)return true}}return false}if(has(c,"not"))return !test(f,c.not,d+1);if(typeof c.field!=="string"||!c.field){warn("condition leaf has no field");return false}if(typeof c.threshold==="string"){warn("condition on "+c.field+" needs the ruleset cutoff "+c.threshold);return false}var op=(c.op==null)?"=":c.op;if(c.value===undefined&&"= != > >= < <= in not_in array_overlap array_excludes".indexOf(op)>=0){warn("condition on "+c.field+" uses "+op+" with no value, so it can never match")}return leaf(read(f,c.field),op,c.value)}function wrap(e){var w=e.closest&&e.closest("[data-cima-field],.field,.form-group,.form-field,.input-group,.form-row");return w||e.parentElement||e}function pass(f){var changed=false;for(var i=0;i<R.length;i++){var r=R[i],e=els(f,r.name);if(!e.length)continue;var show=test(f,r.visible_if,0),w=wrap(e[0]);if(w){var want=show?"":"none";if(w.style.display!==want){w.style.display=want;changed=true}}for(var j=0;j<e.length;j++){var x=e[j];if(show){if(x.getAttribute("data-cima-req")==="1"&&!x.required){x.required=true}}else{if(x.required){x.required=false}if(x.type==="checkbox"||x.type==="radio"){if(x.checked){x.checked=false;changed=true}}else if(x.value){x.value="";changed=true}}}}return changed}function usable(a){if(!a)return null;if(a.arr!==null||a.bool!==null)return null;if(a.txt===null)return null;var t=a.txt.replace(/^\s+|\s+$/g,"");return t===""?null:t}function resolveTpl(f,t){if(String(t).indexOf("{{")<0)return String(t);var emptied=false;var out=String(t).replace(/\{\{([^{}]*)\}\}/g,function(m,inner){var p=inner.indexOf("|");var key=(p<0?inner:inner.slice(0,p)).replace(/^\s+|\s+$/g,"");var fb=p<0?null:inner.slice(p+1).replace(/^\s+|\s+$/g,"");var val=key?usable(read(f,key)):null;if(val!==null)return val;if(fb!==null&&fb!=="")return fb;emptied=true;return ""});if(emptied)out=out.replace(/[ \t]{2,}/g," ").replace(/^\s+|\s+$/g,"");return out.replace(/\{\{[^{}]*$/,"").replace(/\s+$/,"")}function paintTokens(f){var ws=f.querySelectorAll("[data-cima-tpl],[data-cima-tpl-hint]");for(var i=0;i<ws.length;i++){var w=ws[i];var lt=w.getAttribute("data-cima-tpl");if(lt){var txt=resolveTpl(f,lt),s=w.querySelector("[data-cima-lbl]");if(s&&s.textContent!==txt)s.textContent=txt;if(w.getAttribute("data-cima-label")!==txt)w.setAttribute("data-cima-label",txt)}var ht=w.getAttribute("data-cima-tpl-hint");if(ht){var h=w.querySelector("[data-cima-hint]"),hx=resolveTpl(f,ht);if(h&&h.textContent!==hx)h.textContent=hx}}}var BOUNDS={ft:[3,7,TX.ft],in_part:[0,11,TX.inp],cm:[90,250,TX.cm],lb:[60,700,TX.lb],kg:[25,320,TX.kg]};function softMsg(unit,v){var b=BOUNDS[unit];if(!b)return "";var s=String(v==null?"":v).replace(/^\s+|\s+$/g,"");if(s==="")return "";var n=Number(s);if(!isFinite(n))return "";if(n>=b[0]&&n<=b[1])return "";return tx(TX.soft,"what",b[2])}function paintMeasures(f){var ws=f.querySelectorAll("[data-cima-measure]");for(var i=0;i<ws.length;i++){var w=ws[i];if(w.style.display==="none"){var bx=w.querySelectorAll("[data-cima-ft],[data-cima-in],[data-cima-u]");for(var b=0;b<bx.length;b++){if(bx[b].value)bx[b].value=""}var hv=w.querySelector("[data-cima-value]");if(hv&&hv.value)hv.value="";var sf=w.querySelector("[data-cima-soft]");if(sf){sf.textContent="";sf.hidden=true}continue}var mode=w.getAttribute("data-cima-measure");var sel=w.querySelector("[data-cima-unit]");var unit=sel?String(sel.value||""):"";var soft=w.querySelector("[data-cima-soft]");var msg="";if(mode==="height_ft_in"){var ftin=w.querySelector("[data-cima-meas-ftin]"),plain=w.querySelector("[data-cima-meas-plain]");var asFtIn=(unit==="in");if(ftin)ftin.hidden=!asFtIn;if(plain)plain.hidden=asFtIn;if(asFtIn){var fb=w.querySelector("[data-cima-ft]"),ib=w.querySelector("[data-cima-in]");msg=softMsg("ft",fb?fb.value:"")||softMsg("in_part",ib?ib.value:"")}else{var pb=w.querySelector("[data-cima-u]");msg=softMsg(unit,pb?pb.value:"")}}else{var nb=w.querySelector("[data-cima-u]");msg=softMsg(unit,nb?nb.value:"")}if(soft){if(msg){soft.textContent=msg;soft.hidden=false}else{soft.textContent="";soft.hidden=true}}}}function num(el){var s=el?String(el.value||"").replace(/^s+|s+$/g,""):"";return s}function syncMeasures(f){var ws=f.querySelectorAll("[data-cima-measure]");for(var i=0;i<ws.length;i++){var w=ws[i];var hid=w.querySelector("[data-cima-value]");if(!hid)continue;var sel=w.querySelector("[data-cima-unit]");var unit=sel?String(sel.value||""):"";var v="";if(w.getAttribute("data-cima-measure")==="height_ft_in"&&unit==="in"){var ft=num(w.querySelector("[data-cima-ft]")),inch=num(w.querySelector("[data-cima-in]"));if(ft===""&&inch===""){v=""}else{var a=Number(ft||0),b=Number(inch||0);v=(isFinite(a)&&isFinite(b))?String(a*12+b):""}}else{v=num(w.querySelector("[data-cima-u]"))}if(hid.value!==v)hid.value=v}}function fstat(w,msg,bad){var s=w.querySelector("[data-cima-file-status]");if(!s)return;if(!msg){s.textContent="";s.hidden=true;return}s.textContent=msg;s.hidden=false;s.style.color=bad?"#b91c1c":"#6b7280"}function fvals(w){var h=w.querySelector("[data-cima-file-value]");var raw=h&&h.value?String(h.value):"";if(!raw)return[];try{var p=JSON.parse(raw);if(Object.prototype.toString.call(p)==="[object Array]")return p}catch(e){}return[raw]}function fsetv(w,list){var h=w.querySelector("[data-cima-file-value]");if(!h)return;h.value=!list.length?"":(w.hasAttribute("data-cima-file-multiple")?JSON.stringify(list):list[0])}function fpaint(w){var list=w.querySelector("[data-cima-file-list]");if(!list)return;var paths=fvals(w);list.innerHTML="";for(var i=0;i<paths.length;i++){(function(path){var row=document.createElement("div");row.style.cssText="display:flex;align-items:center;gap:8px;margin-top:6px;font-size:13px";var nm=document.createElement("span");var seg=String(path).split("/").pop()||String(path);nm.textContent=seg.replace(/^\d+_/,"");var rm=document.createElement("button");rm.type="button";rm.textContent=TX.remove;rm.style.cssText="background:none;border:0;color:#b91c1c;cursor:pointer;font-size:13px;padding:0";rm.addEventListener("click",function(){var keep=fvals(w).filter(function(x){return x!==path});fsetv(w,keep);fpaint(w);fstat(w,"",false)});row.appendChild(nm);row.appendChild(rm);list.appendChild(row)})(paths[i])}}function faccept(w,file){var a=w.getAttribute("data-cima-accept");if(!a)return true;var want=a.split(",");var t=String(file.type||"").toLowerCase();var nm=String(file.name||"").toLowerCase();for(var i=0;i<want.length;i++){var x=want[i].replace(/^\s+|\s+$/g,"").toLowerCase();if(!x)continue;if(x.charAt(0)==="."){if(nm.slice(-x.length)===x)return true;continue}if(x.slice(-2)==="/*"){if(t.indexOf(x.slice(0,-1))===0)return true;continue}if(t===x)return true}return false}async function fupload(w,file){var key=w.getAttribute("data-cima-file");var maxMb=Number(w.getAttribute("data-cima-max-mb")||25);if(!UP||!UP.fnBase||!UP.formId){fstat(w,TX.upNone,true);return}if(file.size>maxMb*1024*1024){fstat(w,tx(TX.upBig,"mb",maxMb),true);return}if(!faccept(w,file)){fstat(w,TX.upType,true);return}fstat(w,tx(TX.uploading,"name",file.name),false);try{var k="";try{k=new URLSearchParams(location.search).get("k")||""}catch(e){}var body={form_id:UP.formId,field_key:key,filename:file.name,content_type:file.type||"application/octet-stream",size:file.size};if(k)body.k=k;var r=await fetch(UP.fnBase+"/form-file-upload",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});var j=await r.json().catch(function(){return null});if(!j||!j.ok||!j.path||!j.signed_url){fstat(w,j&&j.error==="too_large"?TX.upTooLarge:TX.upFailed,true);return}var url=String(j.signed_url);if(url.indexOf("http")!==0)url=UP.fnBase.replace(/\/functions\/v1$/,"")+"/storage/v1"+(url.charAt(0)==="/"?"":"/")+url;var put=await fetch(url,{method:"PUT",body:file,headers:{"x-upsert":"true"}});if(!put.ok){fstat(w,TX.upFailed,true);return}var keep=w.hasAttribute("data-cima-file-multiple")?fvals(w):[];keep.push(j.path);fsetv(w,keep);fpaint(w);fstat(w,"",false)}catch(e){fstat(w,TX.upFailed,true)}}function initFiles(f){var ws=f.querySelectorAll("[data-cima-file]");for(var i=0;i<ws.length;i++){(function(w){if(w.__cimaFile)return;w.__cimaFile=1;fpaint(w);var inp=w.querySelector("[data-cima-file-input]");if(!inp)return;inp.addEventListener("change",function(){var files=inp.files?Array.prototype.slice.call(inp.files):[];if(!w.hasAttribute("data-cima-file-multiple"))files=files.slice(0,1);for(var n=0;n<files.length;n++)fupload(w,files[n]);inp.value=""})})(ws[i])}}function paintFiles(f){var ws=f.querySelectorAll("[data-cima-file]");for(var i=0;i<ws.length;i++){var w=ws[i];if(w.style.display==="none"){var h=w.querySelector("[data-cima-file-value]");if(h&&h.value){h.value="";fpaint(w);fstat(w,"",false)}}}}function apply(f){syncMeasures(f);for(var n=0;n<5;n++){if(!pass(f))break}paintTokens(f);paintMeasures(f);paintFiles(f)}function init(){var fs=document.querySelectorAll("form");for(var i=0;i<fs.length;i++){(function(f){if(f.__cimaVis)return;f.__cimaVis=1;var all=f.querySelectorAll("input,select,textarea");for(var k=0;k<all.length;k++){if(all[k].required)all[k].setAttribute("data-cima-req","1")}initFiles(f);apply(f);f.addEventListener("change",function(){apply(f)});f.addEventListener("input",function(){apply(f)});})(fs[i])}}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",init)}else{init()}})();</script><script>(function(){function boxes(f){return f&&f.querySelectorAll?f.querySelectorAll('input[data-cima-consent]'):[]}function firstUnchecked(f){var b=boxes(f);for(var i=0;i<b.length;i++){if(!b[i].checked)return b[i]}return null}function fail(cb){var w=cb.closest?cb.closest('[data-cima-consent-block]'):null;if(w){var e=w.querySelector('[data-cima-consent-error]');if(e)e.style.display='block';}try{cb.focus({preventScroll:false});}catch(_){}}document.addEventListener('submit',function(ev){var f=ev.target;var cb=firstUnchecked(f);if(cb){ev.preventDefault();ev.stopImmediatePropagation();fail(cb);}},true);document.addEventListener('click',function(ev){var t=ev.target&&ev.target.closest?ev.target.closest('button,input[type=submit]'):null;if(!t)return;if(!t.type||t.type.toLowerCase()!=='submit')return;var f=t.form||(t.closest?t.closest('form'):null);var cb=firstUnchecked(f);if(cb){ev.preventDefault();ev.stopImmediatePropagation();fail(cb);}},true);document.addEventListener('change',function(ev){var cb=ev.target;if(!cb||!cb.hasAttribute||!cb.hasAttribute('data-cima-consent'))return;if(!cb.checked)return;var w=cb.closest?cb.closest('[data-cima-consent-block]'):null;if(w){var e=w.querySelector('[data-cima-consent-error]');if(e)e.style.display='none';}},true);})();</script><script src="fit-language.js"></script><script src="fit-calendar.js"></script></body>
+</html>

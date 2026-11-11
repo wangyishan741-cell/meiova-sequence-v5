@@ -1,0 +1,5 @@
+/* The supplied background and original video are separate, with feathered sides. */
+#home .photo-leaf:first-child img[data-fusion-asset="hero-fullbleed-v2"]{object-fit:fill!important;object-position:center!important}
+#home .photo-leaf:first-child img.jimeng-video-poster{position:absolute!important;inset:auto!important;left:var(--jimeng-poster-x,-15.5vw)!important;top:0!important;width:var(--jimeng-poster-w,133.333vh)!important;height:var(--jimeng-poster-h,100vh)!important;max-width:none!important;object-fit:fill!important;filter:none!important;transform:none!important;mask-image:linear-gradient(90deg,transparent 2.5%,#000 13.22%,#000 88.46%,transparent 99.5%);-webkit-mask-image:linear-gradient(90deg,transparent 2.5%,#000 13.22%,#000 88.46%,transparent 99.5%)}
+@media(max-width:850px){#home .photo-leaf:first-child img.jimeng-video-poster{left:-34vw!important}}
+#care .care-portrait{border-radius:16px;overflow:hidden}

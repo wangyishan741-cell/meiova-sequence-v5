@@ -1,0 +1,5 @@
+/* Light only. The existing surface keeps its layout, transform and colour. */
+.surface-pointer-glow{position:fixed;left:0;top:0;width:0;height:0;z-index:55;pointer-events:none!important;overflow:hidden;opacity:0;transition:opacity 240ms ease;contain:strict}
+.surface-pointer-glow::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse var(--glow-size,320px) var(--glow-size,320px) at var(--glow-x,50%) var(--glow-y,50%),rgb(255 255 255 / .18),rgb(255 255 255 / .07) 42%,transparent 72%)}
+.surface-pointer-glow[data-visible=true]{opacity:1}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.surface-pointer-glow{display:none}}
